@@ -129,6 +129,24 @@ const translations = {
     newsSubtitle: 'Testline kompaniyasining so‘nggi yangiliklari',
     viewDetails: 'Batafsil ko‘rish',
     viewMore: 'Batafsil ko‘rish',
+    timelineTitle: 'Kompaniya Tarixi',
+    timelineDesc: "So'nggi 5 yildagi asosiy bosqichlarimiz.",
+    timeline2020Title: 'Boshlanish',
+    timeline2020Desc:
+      'Testline kompaniyasi tashkil etildi va birinchi mahsulotlar ishlab chiqarildi.',
+    timeline2021Title: 'Innovatsion mahsulotlar',
+    timeline2021Desc: 'Yangi innovatsion tibbiy testlar bozorga chiqarildi.',
+    timeline2022Title: 'Xalqaro hamkorlik',
+    timeline2022Desc: "Xalqaro hamkorlik va eksport yo'lga qo'yildi.",
+    timeline2023Title: 'Sifat sertifikatlari',
+    timeline2023Desc:
+      "Mahsulotlarimiz xalqaro sifat sertifikatlariga ega bo'ldi.",
+    timeline2024Title: 'Raqamli rivojlanish',
+    timeline2024Desc:
+      'Raqamli texnologiyalar joriy qilindi va onlayn xizmatlar kengaytirildi.',
+    timeline2025Title: 'Kelajak sari',
+    timeline2025Desc:
+      'Yangi bozorlarga chiqish va mahsulotlar assortimentini kengaytirish rejalashtirilmoqda.',
   },
   ru: {
     // Navigation
@@ -244,6 +262,25 @@ const translations = {
     newsSubtitle: 'Новости и события Testline',
     viewDetails: 'Подробнее',
     viewMore: 'Подробнее',
+    timelineTitle: 'История компании',
+    timelineDesc: 'Ключевые этапы за последние 5 лет.',
+    timeline2020Title: 'Начало',
+    timeline2020Desc:
+      'Компания Testline была основана и выпустила первые продукты.',
+    timeline2021Title: 'Инновационные продукты',
+    timeline2021Desc:
+      'На рынок выведены новые инновационные медицинские тесты.',
+    timeline2022Title: 'Международное сотрудничество',
+    timeline2022Desc: 'Налажено международное сотрудничество и экспорт.',
+    timeline2023Title: 'Сертификаты качества',
+    timeline2023Desc:
+      'Наши продукты получили международные сертификаты качества.',
+    timeline2024Title: 'Цифровое развитие',
+    timeline2024Desc:
+      'Внедрены цифровые технологии и расширены онлайн-сервисы.',
+    timeline2025Title: 'В будущее',
+    timeline2025Desc:
+      'Планируется выход на новые рынки и расширение ассортимента продуктов.',
   },
   en: {
     // Navigation
@@ -359,6 +396,25 @@ const translations = {
     newsSubtitle: 'News and events about Testline',
     viewDetails: 'View Details',
     viewMore: 'View More',
+    timelineTitle: 'Company Timeline',
+    timelineDesc: 'Key milestones from the last 5 years.',
+    timeline2020Title: 'Foundation',
+    timeline2020Desc: 'Testline was founded and launched its first products.',
+    timeline2021Title: 'Innovative Products',
+    timeline2021Desc:
+      'New innovative medical tests were introduced to the market.',
+    timeline2022Title: 'International Collaboration',
+    timeline2022Desc:
+      'Established international partnerships and began exports.',
+    timeline2023Title: 'Quality Certifications',
+    timeline2023Desc:
+      'Our products received international quality certifications.',
+    timeline2024Title: 'Digital Growth',
+    timeline2024Desc:
+      'Implemented digital technologies and expanded online services.',
+    timeline2025Title: 'Looking Ahead',
+    timeline2025Desc:
+      'Plans to enter new markets and expand the product range.',
   },
 };
 

@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users, Award, Globe, Heart, FileCheck } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { licenses } from '@/data/licenses';
+import Timeline from '@/components/Timeline';
 
 export default function About() {
   const { t, language } = useLanguage();
@@ -76,6 +77,17 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Timeline Section */}
+      <div className="py-20">
+        <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-6">
+          {t('timelineTitle')}
+        </h2>
+        <br />
+        <div className="py-20">
+          <Timeline language={language} />
+        </div>
+      </div>
 
       {/* Mission & Vision Section */}
       <section className="py-20 bg-gray-50">
