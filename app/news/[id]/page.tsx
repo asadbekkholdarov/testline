@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowLeft, ArrowRight, CalendarDays, Clock, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { newsItems, NewsItem } from '@/data/news';
+import { getAllNewsItems, NewsItem } from '@/data/news';
 
 interface NewsDetailPageProps {
   params: { id: string };
@@ -20,7 +20,8 @@ export default function NewsDetail({ params }: NewsDetailPageProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    const foundItem = newsItems.find(item => item.id === params.id);
+    const allItems = getAllNewsItems();
+    const foundItem = allItems.find(item => item.id === params.id);
     setNewsItem(foundItem || null);
   }, [params.id]);
 

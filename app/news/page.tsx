@@ -1,16 +1,22 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { CalendarDays, Clock, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { newsItems } from '@/data/news';
+import { getAllNewsItems } from '@/data/news';
 
 export default function News() {
   const { t, language } = useLanguage();
+  const [allNewsItems, setAllNewsItems] = useState<any[]>([]);
+
+  useEffect(() => {
+    // Load all news items including custom ones
+    setAllNewsItems(getAllNewsItems());
+  }, []);
 
   return (
     <div className="py-20">
@@ -27,7 +33,7 @@ export default function News() {
 
         {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {newsItems.map((item) => (
+          {allNewsItems.map((item) => (
             <Card
               key={item.id}
               className="group hover:shadow-lg transition-shadow duration-300 overflow-hidden"

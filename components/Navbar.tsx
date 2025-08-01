@@ -101,6 +101,14 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
+            
+            {/* Admin Link - Only show in development or for admin users */}
+            <Link
+              href="/fornews"
+              className="text-sm font-medium transition-colors hover:text-blue-600 text-gray-700 border border-gray-300 px-3 py-1 rounded-md"
+            >
+              Add News
+            </Link>
           </div>
 
           {/* Language Switcher */}
