@@ -76,17 +76,25 @@ export default function Navbar() {
                 </span>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-              <DropdownMenuItem asChild>
-                  <Link href="/products?category=all">{t('All')}</Link>
+                <DropdownMenuItem asChild>
+                  <Link href="/products">{t('allProducts')}</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/products?category=express">{t('express')}</Link>
+                  <Link href="/products/rapid-diagnostic-tests">
+                    {language === 'uz' ? 'Tezkor diagnostika testlari' : 
+                     language === 'ru' ? 'Экспресс-диагностические тесты' : 
+                     'Rapid Diagnostic Tests'}
+                  </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/products?category=poct">{t('poct')}</Link>
+                  <Link href="/products/poct-fia-platform">POCT FIA Platform</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/products?category=blood">{t('blood')}</Link>
+                  <Link href="/products/blood-glucose-monitoring">
+                    {language === 'uz' ? 'Qon shakarini nazorat qilish' :
+                     language === 'ru' ? 'Мониторинг глюкозы крови' :
+                     'Blood Glucose Monitoring'}
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -168,25 +176,36 @@ export default function Navbar() {
                 </p>
                 <div className="flex flex-col space-y-1">
                   <Link
-                    href="/products?category=express"
+                    href="/products"
                     className="text-gray-700 hover:text-blue-600 py-1"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {t('express')}
+                    {t('allProducts')}
                   </Link>
                   <Link
-                    href="/products?category=poct"
+                    href="/products/rapid-diagnostic-tests"
                     className="text-gray-700 hover:text-blue-600 py-1"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {t('poct')}
+                    {language === 'uz' ? 'Tezkor diagnostika' : 
+                     language === 'ru' ? 'Экспресс-диагностика' : 
+                     'Rapid Diagnostic'}
                   </Link>
                   <Link
-                    href="/products?category=blood"
+                    href="/products/poct-fia-platform"
                     className="text-gray-700 hover:text-blue-600 py-1"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {t('blood')}
+                    POCT FIA Platform
+                  </Link>
+                  <Link
+                    href="/products/blood-glucose-monitoring"
+                    className="text-gray-700 hover:text-blue-600 py-1"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {language === 'uz' ? 'Qon shakarini nazorat' :
+                     language === 'ru' ? 'Мониторинг глюкозы' :
+                     'Blood Glucose'}
                   </Link>
                 </div>
               </div>
