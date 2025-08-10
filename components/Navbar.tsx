@@ -258,8 +258,8 @@ export default function Navbar() {
                       {language === 'uz' ? 'Tezkor diagnostika testlari' : 
                        language === 'ru' ? 'Экспресс-диагностические тесты' : 
                        'Rapid Diagnostic Tests'}
-                     <div className="ml-2 flex flex-col space-y-1">
-                   <div>
+                    </Link>
+                    <div className="ml-2 flex flex-col space-y-1">
                       <Link
                         href="/products/rapid-diagnostic-tests/infectious-diseases"
                         className="text-gray-600 hover:text-blue-600 py-1 text-sm"
