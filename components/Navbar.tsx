@@ -82,7 +82,7 @@ export default function Navbar() {
                 </DropdownMenuItem>
                 
                 {/* Rapid Diagnostic Tests with submenu */}
-                <DropdownMenu>
+                <DropdownMenu modal={false}>
                   <DropdownMenuTrigger asChild>
                     <div className="flex items-center justify-between w-full px-2 py-1.5 text-sm rounded-sm hover:bg-accent hover:text-accent-foreground cursor-pointer">
                       {language === 'uz' ? 'Tezkor diagnostika testlari' : 
@@ -91,7 +91,7 @@ export default function Navbar() {
                       <ChevronDown className="w-3 h-3 rotate-[-90deg]" />
                     </div>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent side="right" className="w-64">
+                  <DropdownMenuContent side="right" className="w-64" align="start" sideOffset={0} alignOffset={0}>
                     <DropdownMenuItem asChild>
                       <Link href="/products/rapid-diagnostic-tests">
                         {language === 'uz' ? 'Barcha tezkor testlar' :
