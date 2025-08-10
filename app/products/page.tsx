@@ -63,7 +63,7 @@ export default function Products() {
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category) => (
-            {category.id === 'all' ? (
+            category.id === 'all' ? (
               <Button
                 key={category.id}
                 onClick={() => setActiveFilter(category.id)}
@@ -89,7 +89,7 @@ export default function Products() {
                   {category.label}
                 </Link>
               </Button>
-            )}
+            )
           ))}
         </div>
 
