@@ -67,25 +67,73 @@ export default function Navbar() {
             {/* Products Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <span
+                <button
                   className={`text-sm font-medium transition-colors cursor-pointer hover:text-blue-600 ${
                     isActive('/products') ? 'text-blue-600' : 'text-gray-700'
                   }`}
                 >
                   {t('products')}
-                </span>
+                  <ChevronDown className="w-4 h-4 ml-1 inline" />
+                </button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
+              <DropdownMenuContent className="w-64">
                 <DropdownMenuItem asChild>
                   <Link href="/products">{t('allProducts')}</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/products/rapid-diagnostic-tests">
-                    {language === 'uz' ? 'Tezkor diagnostika testlari' : 
-                     language === 'ru' ? 'Экспресс-диагностические тесты' : 
-                     'Rapid Diagnostic Tests'}
-                  </Link>
-                </DropdownMenuItem>
+                
+                {/* Rapid Diagnostic Tests with submenu */}
+                <div className="relative group">
+                  <DropdownMenuItem asChild>
+                    <Link href="/products/rapid-diagnostic-tests" className="flex items-center justify-between">
+                      {language === 'uz' ? 'Tezkor diagnostika testlari' : 
+                       language === 'ru' ? 'Экспресс-диагностические тесты' : 
+                       'Rapid Diagnostic Tests'}
+                      <ChevronDown className="w-3 h-3 rotate-[-90deg]" />
+                    </Link>
+                  </DropdownMenuItem>
+                  
+                  {/* Submenu */}
+                  <div className="absolute left-full top-0 ml-1 w-56 bg-white border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="py-1">
+                      <Link href="/products/rapid-diagnostic-tests/infectious-diseases" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        {language === 'uz' ? 'Yuqumli kasalliklar' :
+                         language === 'ru' ? 'Инфекционные заболевания' :
+                         'Infectious Diseases'}
+                      </Link>
+                      <Link href="/products/rapid-diagnostic-tests/maternal-child-health" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        {language === 'uz' ? 'Ona va bola salomatligi' :
+                         language === 'ru' ? 'Здоровье матери и ребенка' :
+                         'Maternal & Child Health'}
+                      </Link>
+                      <Link href="/products/rapid-diagnostic-tests/gastrointestinal-fecal" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        {language === 'uz' ? 'Oshqozon-ichak va najas' :
+                         language === 'ru' ? 'Желудочно-кишечные и фекальные' :
+                         'Gastrointestinal & Fecal'}
+                      </Link>
+                      <Link href="/products/rapid-diagnostic-tests/cardiac-metabolic" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        {language === 'uz' ? 'Yurak va metabolik' :
+                         language === 'ru' ? 'Сердечные и метаболические' :
+                         'Cardiac & Metabolic'}
+                      </Link>
+                      <Link href="/products/rapid-diagnostic-tests/oncology" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        {language === 'uz' ? 'Onkologiya' :
+                         language === 'ru' ? 'Онкология' :
+                         'Oncology'}
+                      </Link>
+                      <Link href="/products/rapid-diagnostic-tests/drug-of-abuse" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        {language === 'uz' ? 'Giyohvand moddalar' :
+                         language === 'ru' ? 'Наркотические вещества' :
+                         'Drug of Abuse'}
+                      </Link>
+                      <Link href="/products/rapid-diagnostic-tests/others" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        {language === 'uz' ? 'Boshqalar' :
+                         language === 'ru' ? 'Другие' :
+                         'Others'}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                
                 <DropdownMenuItem asChild>
                   <Link href="/products/poct-fia-platform">POCT FIA Platform</Link>
                 </DropdownMenuItem>
@@ -182,15 +230,85 @@ export default function Navbar() {
                   >
                     {t('allProducts')}
                   </Link>
-                  <Link
-                    href="/products/rapid-diagnostic-tests"
-                    className="text-gray-700 hover:text-blue-600 py-1"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {language === 'uz' ? 'Tezkor diagnostika' : 
-                     language === 'ru' ? 'Экспресс-диагностика' : 
-                     'Rapid Diagnostic'}
-                  </Link>
+                  
+                  {/* Rapid Diagnostic Tests with subcategories */}
+                  <div className="ml-2">
+                    <Link
+                      href="/products/rapid-diagnostic-tests"
+                      className="text-gray-700 hover:text-blue-600 py-1 font-medium block"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {language === 'uz' ? 'Tezkor diagnostika testlari' : 
+                       language === 'ru' ? 'Экспресс-диагностические тесты' : 
+                       'Rapid Diagnostic Tests'}
+                    </Link>
+                    <div className="ml-4 flex flex-col space-y-1">
+                      <Link
+                        href="/products/rapid-diagnostic-tests/infectious-diseases"
+                        className="text-gray-600 hover:text-blue-600 py-1 text-sm"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {language === 'uz' ? 'Yuqumli kasalliklar' :
+                         language === 'ru' ? 'Инфекционные заболевания' :
+                         'Infectious Diseases'}
+                      </Link>
+                      <Link
+                        href="/products/rapid-diagnostic-tests/maternal-child-health"
+                        className="text-gray-600 hover:text-blue-600 py-1 text-sm"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {language === 'uz' ? 'Ona va bola salomatligi' :
+                         language === 'ru' ? 'Здоровье матери и ребенка' :
+                         'Maternal & Child Health'}
+                      </Link>
+                      <Link
+                        href="/products/rapid-diagnostic-tests/gastrointestinal-fecal"
+                        className="text-gray-600 hover:text-blue-600 py-1 text-sm"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {language === 'uz' ? 'Oshqozon-ichak va najas' :
+                         language === 'ru' ? 'Желудочно-кишечные и фекальные' :
+                         'Gastrointestinal & Fecal'}
+                      </Link>
+                      <Link
+                        href="/products/rapid-diagnostic-tests/cardiac-metabolic"
+                        className="text-gray-600 hover:text-blue-600 py-1 text-sm"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {language === 'uz' ? 'Yurak va metabolik' :
+                         language === 'ru' ? 'Сердечные и метаболические' :
+                         'Cardiac & Metabolic'}
+                      </Link>
+                      <Link
+                        href="/products/rapid-diagnostic-tests/oncology"
+                        className="text-gray-600 hover:text-blue-600 py-1 text-sm"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {language === 'uz' ? 'Onkologiya' :
+                         language === 'ru' ? 'Онкология' :
+                         'Oncology'}
+                      </Link>
+                      <Link
+                        href="/products/rapid-diagnostic-tests/drug-of-abuse"
+                        className="text-gray-600 hover:text-blue-600 py-1 text-sm"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {language === 'uz' ? 'Giyohvand moddalar' :
+                         language === 'ru' ? 'Наркотические вещества' :
+                         'Drug of Abuse'}
+                      </Link>
+                      <Link
+                        href="/products/rapid-diagnostic-tests/others"
+                        className="text-gray-600 hover:text-blue-600 py-1 text-sm"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {language === 'uz' ? 'Boshqalar' :
+                         language === 'ru' ? 'Другие' :
+                         'Others'}
+                      </Link>
+                    </div>
+                  </div>
+                  
                   <Link
                     href="/products/poct-fia-platform"
                     className="text-gray-700 hover:text-blue-600 py-1"
