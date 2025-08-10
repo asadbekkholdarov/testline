@@ -220,7 +220,7 @@ export default function Products() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {(activeFilter === 'all' ? products : products.filter((product) => product.category === activeFilter)).map((product) => (
               <Card
-              key={category.id}
+              key={product.id}
                 className="group hover:shadow-lg transition-shadow duration-300"
             >
                 <CardHeader className="p-0">
