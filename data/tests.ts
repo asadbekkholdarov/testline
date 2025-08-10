@@ -22,9 +22,9 @@ export const tests: Test[] = [
     name: "COMBO Test",
     category: "infectious-diseases",
     description: {
-      uz: "HIV va Hepatit B/C ni bir vaqtda aniqlash uchun kombinatsiyalashgan test. Yuqori aniqlik va tezkor natija beradi.",
-      ru: "Комбинированный тест для одновременного обнаружения ВИЧ и гепатита B/C. Обеспечивает высокую точность и быстрый результат.",
-      en: "Combined test for simultaneous detection of HIV and Hepatitis B/C. Provides high accuracy and rapid results."
+      uz: "HIV va Hepatit B/C ni bir vaqtda aniqlash uchun kombinatsiyalashgan test. Bu xromatografik immunoanaliz bo'lib, yuqori aniqlik va tezkor natija beradi. Skrining usuli sifatida ishlatiladi.",
+      ru: "Комбинированный тест для одновременного обнаружения ВИЧ и гепатита B/C. Это хроматографический иммуноанализ, обеспечивающий высокую точность и быстрый результат. Используется как скрининговый метод.",
+      en: "Combined test for simultaneous detection of HIV and Hepatitis B/C. This is a chromatographic immunoassay providing high accuracy and rapid results. Used as a screening method."
     },
     specifications: {
       sensitivity: "99.5%",
@@ -36,16 +36,16 @@ export const tests: Test[] = [
   },
   {
     id: "hav-test",
-    name: "HAV Test",
+    name: "HAV IgM Test",
     category: "infectious-diseases",
     description: {
-      uz: "Hepatit A virusiga qarshi antikorlarni aniqlash uchun test. Hepatit A infeksiyasini tashxislashda ishlatiladi.",
-      ru: "Тест для обнаружения антител к вирусу гепатита А. Используется для диагностики инфекции гепатита А.",
-      en: "Test for detecting antibodies to Hepatitis A virus. Used for diagnosing Hepatitis A infection."
+      uz: "Hepatit A virusiga qarshi IgM antikorlarini sifatli aniqlash uchun tezkor test. Bu tez va ishonchli xromatografik immunoanaliz bo'lib, qon serumi, plazma yoki to'liq qonda HAV IgM antikorlarini aniqlaydi.",
+      ru: "Экспресс-тест HAV IgM используется для качественного выявления антител к вирусу гепатита А в сыворотке, плазме или цельной крови человека. Это быстрый хроматографический иммуноанализ.",
+      en: "HAV IgM Rapid Test is used for qualitative detection of antibodies to Hepatitis A virus in human serum, plasma or whole blood. This is a fast chromatographic immunoassay."
     },
     specifications: {
-      sensitivity: "98.2%",
-      specificity: "99.1%",
+      sensitivity: "100%",
+      specificity: "100%",
       time: "15 min",
       sampleType: "Serum/Plasma"
     },
@@ -56,14 +56,14 @@ export const tests: Test[] = [
     name: "HBsAg Cassette",
     category: "infectious-diseases",
     description: {
-      uz: "Hepatit B yuzaki antigenini aniqlash uchun kasseta formati test. Hepatit B infeksiyasini erta aniqlashda ishlatiladi.",
-      ru: "Тест в формате кассеты для обнаружения поверхностного антигена гепатита B. Используется для раннего выявления инфекции гепатита B.",
-      en: "Cassette format test for detecting Hepatitis B surface antigen. Used for early detection of Hepatitis B infection."
+      uz: "Hepatit B - bu Hepatit B virusi (HBV) tomonidan kelib chiqadigan jigar viral infeksiyasi. HBsAg tezkor test inson qonida HBV yuzaki antigenini tez va qulay skrining qilish uchun mo'ljallangan. Ijobiy natija joriy infeksiya mavjudligini ko'rsatadi.",
+      ru: "Гепатит B – это вирусная инфекция печени, вызываемая вирусом гепатита B (HBV). Экспресс-тест HBsAg предназначен для быстрого и удобного скрининга поверхностного антигена HBV в крови человека. Положительный результат указывает на наличие текущей инфекции.",
+      en: "Hepatitis B is a viral liver infection caused by Hepatitis B virus (HBV). HBsAg Rapid Test is designed for quick and convenient screening of HBV surface antigen in human blood. A positive result indicates the presence of current infection."
     },
     specifications: {
-      sensitivity: "99.0%",
-      specificity: "99.5%",
-      time: "15 min",
+      sensitivity: "100%",
+      specificity: "99.80%",
+      time: "15-30 min",
       sampleType: "Serum/Plasma/Whole Blood"
     },
     images: ["/images/tests/HBsAg_casseta_1.jpg", "/images/tests/HBsAg_casseta_2.jpg"]
@@ -73,14 +73,14 @@ export const tests: Test[] = [
     name: "HBsAg Strip",
     category: "infectious-diseases",
     description: {
-      uz: "Hepatit B yuzaki antigenini aniqlash uchun strip formati test. Oddiy va tezkor foydalanish uchun mo'ljallangan.",
-      ru: "Тест в формате полоски для обнаружения поверхностного антигена гепатита B. Предназначен для простого и быстрого использования.",
-      en: "Strip format test for detecting Hepatitis B surface antigen. Designed for simple and rapid use."
+      uz: "Hepatit B yuzaki antigenini aniqlash uchun strip formati test. Oddiy va tezkor foydalanish uchun mo'ljallangan. Xromatografik immunologik analiz prinsipi asosida ishlaydi.",
+      ru: "Тест в формате полоски для обнаружения поверхностного антигена гепатита B. Предназначен для простого и быстрого использования. Работает на принципе хроматографического иммунологического анализа.",
+      en: "Strip format test for detecting Hepatitis B surface antigen. Designed for simple and rapid use. Works on the principle of chromatographic immunological analysis."
     },
     specifications: {
-      sensitivity: "98.8%",
-      specificity: "99.2%",
-      time: "15 min",
+      sensitivity: "100%",
+      specificity: "99.80%",
+      time: "15-30 min",
       sampleType: "Serum/Plasma"
     },
     images: ["/images/tests/HBsAg_strip_1.jpg", "/images/tests/HBsAg_strip_2.jpg"]
@@ -90,14 +90,14 @@ export const tests: Test[] = [
     name: "HCV Test",
     category: "infectious-diseases",
     description: {
-      uz: "Hepatit C virusiga qarshi antikorlarni aniqlash uchun test. Hepatit C infeksiyasini tashxislashda ishlatiladi.",
-      ru: "Тест для обнаружения антител к вирусу гепатита C. Используется для диагностики инфекции гепатита C.",
-      en: "Test for detecting antibodies to Hepatitis C virus. Used for diagnosing Hepatitis C infection."
+      uz: "Anti-HCV tezkor test Hepatit C virusi (HCV) ga qarshi antikorlarni inson serumi, plazma yoki to'liq qonida sifatli aniqlash uchun mo'ljallangan. Bu tez va qulay xromatografik immunoanaliz bo'lib, virus antikorlarini bir vaqtda aniqlash imkonini beradi.",
+      ru: "Экспресс-тест Anti-HCV предназначен для качественного определения антител к вирусу гепатита C (HCV) в сыворотке, плазме или цельной крови человека. Это быстрый и удобный хроматографический иммуноанализ, который позволяет одновременно выявить наличие антител к вирусу.",
+      en: "Anti-HCV Rapid Test is designed for qualitative determination of antibodies to Hepatitis C virus (HCV) in human serum, plasma or whole blood. This is a fast and convenient chromatographic immunoassay that allows simultaneous detection of virus antibodies."
     },
     specifications: {
-      sensitivity: "99.2%",
-      specificity: "99.6%",
-      time: "15 min",
+      sensitivity: "99.40%",
+      specificity: "99.80%",
+      time: "15-30 min",
       sampleType: "Serum/Plasma/Whole Blood"
     },
     images: ["/images/tests/HCV_1.jpg", "/images/tests/HCV_2.jpg"]
@@ -107,14 +107,14 @@ export const tests: Test[] = [
     name: "HCV Strip",
     category: "infectious-diseases",
     description: {
-      uz: "Hepatit C virusiga qarshi antikorlarni aniqlash uchun strip formati test. Oson foydalanish va tezkor natija.",
-      ru: "Тест в формате полоски для обнаружения антител к вирусу гепатита C. Простое использование и быстрый результат.",
-      en: "Strip format test for detecting antibodies to Hepatitis C virus. Easy to use with rapid results."
+      uz: "Anti-HCV strip formati test Hepatit C virusi antikorlarini aniqlash uchun ishlatiladi. Xromatografik immunologik analiz prinsipi asosida ishlaydi. Oson foydalanish va tezkor natija beradi.",
+      ru: "Anti-HCV тест в формате полоски используется для обнаружения антител к вирусу гепатита C. Работает на принципе хроматографического иммунологического анализа. Простое использование и быстрый результат.",
+      en: "Anti-HCV strip format test is used for detecting antibodies to Hepatitis C virus. Works on the principle of chromatographic immunological analysis. Easy to use with rapid results."
     },
     specifications: {
-      sensitivity: "98.9%",
-      specificity: "99.3%",
-      time: "15 min",
+      sensitivity: "99.40%",
+      specificity: "99.80%",
+      time: "15-30 min",
       sampleType: "Serum/Plasma"
     },
     images: ["/images/tests/HCV_STRIP_1.jpg", "/images/tests/HCV_STRIP_2.jpg"]
@@ -124,14 +124,14 @@ export const tests: Test[] = [
     name: "HIV 1/2 Test",
     category: "infectious-diseases",
     description: {
-      uz: "HIV 1 va HIV 2 ga qarshi antikorlarni aniqlash uchun test. AIDS virusini erta tashxislashda ishlatiladi.",
-      ru: "Тест для обнаружения антител к ВИЧ 1 и ВИЧ 2. Используется для ранней диагностики вируса СПИДа.",
-      en: "Test for detecting antibodies to HIV 1 and HIV 2. Used for early diagnosis of AIDS virus."
+      uz: "Anti-HIV 1/2 tezkor test - Inson immunonokislik virusi (HIV) ga qarshi antikorlarni aniqlash uchun ekspress-test. Bu test inson qonida (serum, plazma yoki to'liq qon) HIV-1 va HIV-2 ga qarshi antikorlarni sifatli aniqlash uchun ishlatiladi. Bu tez va ishonchli xromatografik immunoanaliz.",
+      ru: "Anti-HIV 1/2 Rapid Test – Экспресс-тест на антитела к вирусу иммунодефицита человека (ВИЧ). Экспресс-тест Anti-HIV 1/2 используется для качественного определения антител к ВИЧ-1 и ВИЧ-2 в крови (сыворотке, плазме или цельной крови) человека. Это быстрый и надежный хроматографический иммуноанализ.",
+      en: "Anti-HIV 1/2 Rapid Test – Rapid test for antibodies to Human Immunodeficiency Virus (HIV). The Anti-HIV 1/2 Rapid Test is used for qualitative determination of antibodies to HIV-1 and HIV-2 in human blood (serum, plasma or whole blood). This is a fast and reliable chromatographic immunoassay."
     },
     specifications: {
-      sensitivity: "99.8%",
-      specificity: "99.9%",
-      time: "15-20 min",
+      sensitivity: "100%",
+      specificity: "100%",
+      time: "15-30 min",
       sampleType: "Serum/Plasma/Whole Blood"
     },
     images: ["/images/tests/HIV1.2_1.jpg", "/images/tests/HIV1.2_2.jpg"]
@@ -141,9 +141,9 @@ export const tests: Test[] = [
     name: "H. Pylori AB Test",
     category: "gastrointestinal-fecal",
     description: {
-      uz: "Helikobakter pilori bakteriyasiga qarshi antikorlarni aniqlash uchun test. Oshqozon yarasi va gastritni tashxislashda yordam beradi.",
-      ru: "Тест для обнаружения антител к бактерии Хеликобактер пилори. Помогает в диагностике язвы желудка и гастрита.",
-      en: "Test for detecting antibodies to Helicobacter pylori bacteria. Helps in diagnosing stomach ulcers and gastritis."
+      uz: "H.pylori Ab tezkor test - Helikobakter pilori antikorlariga test. Bu test inson qoni, serumi yoki plazmasida Helicobacter pylori (H.pylori) ga qarshi antikorlarni (IgG, IgM va IgA) sifatli aniqlash uchun mo'ljallangan. Bu lateral xromatografik immunoanaliz bo'lib, skrining usuli va H.pylori infeksiyasini tashxislashda yordamchi vosita sifatida ishlatiladi.",
+      ru: "H.pylori Ab Экспресс-тест – тест на антитела к Helicobacter pylori. H.pylori Ab Экспресс-тест предназначен для качественного определения антител (IgG, IgM и IgA) к Helicobacter pylori (H.pylori) в крови, сыворотке или плазме человека. Это латеральный хроматографический иммуноанализ, используемый в качестве скринингового метода и вспомогательного средства в диагностике инфекции H.pylori.",
+      en: "H.pylori Ab Rapid Test – test for antibodies to Helicobacter pylori. The H.pylori Ab Rapid Test is designed for qualitative determination of antibodies (IgG, IgM and IgA) to Helicobacter pylori (H.pylori) in human blood, serum or plasma. This is a lateral chromatographic immunoassay used as a screening method and auxiliary tool in diagnosing H.pylori infection."
     },
     specifications: {
       sensitivity: "96.5%",
@@ -158,9 +158,9 @@ export const tests: Test[] = [
     name: "H. Pylori AG Test",
     category: "gastrointestinal-fecal",
     description: {
-      uz: "Helikobakter pilori bakteriyasining antigenini aniqlash uchun test. Faol infeksiyani tashxislashda ishlatiladi.",
-      ru: "Тест для обнаружения антигена бактерии Хеликобактер пилори. Используется для диагностики активной инфекции.",
-      en: "Test for detecting Helicobacter pylori bacteria antigen. Used for diagnosing active infection."
+      uz: "H.pylori Ag tezkor test inson najasida Helicobacter pylori (H.pylori) antigenlarini sifatli aniqlash uchun mo'ljallangan. Bu lateral xromatografik immunoanaliz bo'lib, skrining usuli va H.pylori infeksiyasini tashxislashda yordamchi vosita sifatida ishlatiladi.",
+      ru: "H.pylori Ag Экспресс-тест предназначен для качественного выявления антигенов Helicobacter pylori (H.pylori) в кале человека. Это латеральный хроматографический иммуноанализ, используемый как скрининговый метод и вспомогательное средство в диагностике инфекции H.pylori.",
+      en: "H.pylori Ag Rapid Test is designed for qualitative detection of Helicobacter pylori (H.pylori) antigens in human stool. This is a lateral chromatographic immunoassay used as a screening method and auxiliary tool in diagnosing H.pylori infection."
     },
     specifications: {
       sensitivity: "95.2%",
@@ -175,14 +175,14 @@ export const tests: Test[] = [
     name: "TP Test (Syphilis)",
     category: "infectious-diseases",
     description: {
-      uz: "Sifilis (Treponema pallidum) infeksiyasini aniqlash uchun test. Jinsiy yo'l bilan yuqadigan kasalliklarni tashxislashda ishlatiladi.",
-      ru: "Тест для обнаружения инфекции сифилиса (Treponema pallidum). Используется для диагностики заболеваний, передающихся половым путем.",
-      en: "Test for detecting Syphilis (Treponema pallidum) infection. Used for diagnosing sexually transmitted diseases."
+      uz: "Anti-TP (sifilis) tezkor test - sifilisni aniqlash uchun test. Anti-TP tezkor test inson to'liq qoni, serumi yoki plazmasida sifilisni sifatli aniqlash uchun ishlatiladi. Bu ishonchli xromatografik immunoanaliz bo'lib, tashxisning yuqori aniqligini ta'minlaydi.",
+      ru: "Anti-TP (сифилис) Экспресс-тест – тест для выявления сифилиса. Экспресс-тест Anti-TP используется для качественного определения сифилиса в цельной крови, сыворотке или плазме человека. Это надежный хроматографический иммуноанализ, который обеспечивает высокую точность диагностики.",
+      en: "Anti-TP (Syphilis) Rapid Test – test for syphilis detection. The Anti-TP Rapid Test is used for qualitative determination of syphilis in human whole blood, serum or plasma. This is a reliable chromatographic immunoassay that ensures high diagnostic accuracy."
     },
     specifications: {
-      sensitivity: "98.5%",
-      specificity: "99.2%",
-      time: "15 min",
+      sensitivity: "100%",
+      specificity: "99.7%",
+      time: "15-30 min",
       sampleType: "Serum/Plasma/Whole Blood"
     },
     images: ["/images/tests/TP_1.jpg", "/images/tests/TP_2.jpg"]
