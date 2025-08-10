@@ -32,7 +32,7 @@ export const tests: Test[] = [
       time: "15-20 min",
       sampleType: "Serum/Plasma/Whole Blood"
     },
-    images: ["/data/COMBO_test.jpg"]
+    images: ["/images/tests/COMBO_test.jpg"]
   },
   {
     id: "hav-test",
@@ -49,7 +49,7 @@ export const tests: Test[] = [
       time: "15 min",
       sampleType: "Serum/Plasma"
     },
-    images: ["/data/HAV_1.jpg", "/data/HAV_2.jpg"]
+    images: ["/images/tests/HAV_1.jpg", "/images/tests/HAV_2.jpg"]
   },
   {
     id: "hbsag-cassette",
@@ -66,7 +66,7 @@ export const tests: Test[] = [
       time: "15 min",
       sampleType: "Serum/Plasma/Whole Blood"
     },
-    images: ["/data/HBsAg_casseta_1.jpg", "/data/HBsAg_casseta_2.jpg"]
+    images: ["/images/tests/HBsAg_casseta_1.jpg", "/images/tests/HBsAg_casseta_2.jpg"]
   },
   {
     id: "hbsag-strip",
@@ -83,7 +83,7 @@ export const tests: Test[] = [
       time: "15 min",
       sampleType: "Serum/Plasma"
     },
-    images: ["/data/HBsAg_strip_1.jpg", "/data/HBsAg_strip_2.jpg"]
+    images: ["/images/tests/HBsAg_strip_1.jpg", "/images/tests/HBsAg_strip_2.jpg"]
   },
   {
     id: "hcv-test",
@@ -100,7 +100,7 @@ export const tests: Test[] = [
       time: "15 min",
       sampleType: "Serum/Plasma/Whole Blood"
     },
-    images: ["/data/HCV_1.jpg", "/data/HCV_2.jpg"]
+    images: ["/images/tests/HCV_1.jpg", "/images/tests/HCV_2.jpg"]
   },
   {
     id: "hcv-strip",
@@ -117,7 +117,7 @@ export const tests: Test[] = [
       time: "15 min",
       sampleType: "Serum/Plasma"
     },
-    images: ["/data/HCV_STRIP_1.jpg", "/data/HCV_STRIP_2.jpg"]
+    images: ["/images/tests/HCV_STRIP_1.jpg", "/images/tests/HCV_STRIP_2.jpg"]
   },
   {
     id: "hiv-test",
@@ -134,7 +134,7 @@ export const tests: Test[] = [
       time: "15-20 min",
       sampleType: "Serum/Plasma/Whole Blood"
     },
-    images: ["/data/HIV1.2_1.jpg", "/data/HIV1.2_2.jpg"]
+    images: ["/images/tests/HIV1.2_1.jpg", "/images/tests/HIV1.2_2.jpg"]
   },
   {
     id: "hp-ab-test",
@@ -151,7 +151,7 @@ export const tests: Test[] = [
       time: "10 min",
       sampleType: "Serum/Plasma/Whole Blood"
     },
-    images: ["/data/HP_AB_1.jpg", "/data/HP_AB_2.jpg"]
+    images: ["/images/tests/HP_AB_1.jpg", "/images/tests/HP_AB_2.jpg"]
   },
   {
     id: "hp-ag-test",
@@ -168,7 +168,7 @@ export const tests: Test[] = [
       time: "10 min",
       sampleType: "Stool"
     },
-    images: ["/data/HP_AG_1.jpg", "/data/HP_AG_2.jpg"]
+    images: ["/images/tests/HP_AG_1.jpg", "/images/tests/HP_AG_2.jpg"]
   },
   {
     id: "tp-test",
@@ -185,7 +185,7 @@ export const tests: Test[] = [
       time: "15 min",
       sampleType: "Serum/Plasma/Whole Blood"
     },
-    images: ["/data/TP_1.jpg", "/data/TP_2.jpg"]
+    images: ["/images/tests/TP_1.jpg", "/images/tests/TP_2.jpg"]
   }
 ];
 
