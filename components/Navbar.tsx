@@ -81,6 +81,14 @@ export default function Navbar() {
                   <Link href="/products">{t('allProducts')}</Link>
                 </DropdownMenuItem>
                 
+                <DropdownMenuItem asChild>
+                  <Link href="/products/test-catalog">
+                    {language === 'uz' ? 'Test katalogi' : 
+                     language === 'ru' ? 'Каталог тестов' : 
+                     'Test Catalog'}
+                  </Link>
+                </DropdownMenuItem>
+                
                 {/* Rapid Diagnostic Tests with submenu */}
                 <DropdownMenu modal={false}>
                   <DropdownMenuTrigger asChild>
@@ -248,6 +256,16 @@ export default function Navbar() {
                     {t('allProducts')}
                   </Link>
                   
+                   <Link
+                     href="/products/test-catalog"
+                     className="text-gray-700 hover:text-blue-600 py-1"
+                     onClick={() => setIsMenuOpen(false)}
+                   >
+                     {language === 'uz' ? 'Test katalogi' : 
+                      language === 'ru' ? 'Каталог тестов' : 
+                      'Test Catalog'}
+                   </Link>
+                   
                   {/* Rapid Diagnostic Tests with subcategories */}
                   <div className="ml-2">
                     <Link
