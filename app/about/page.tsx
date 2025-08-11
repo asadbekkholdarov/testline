@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users, Award, Globe, Heart, FileCheck } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { licenses } from '@/data/licenses';
 import Timeline from '@/components/Timeline';
 
 export default function About() {
@@ -129,61 +128,214 @@ export default function About() {
         </div>
       </section>
 
-      {/* Licenses Section */}
+      {/* Certifications Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('licensesTitle')}
+              {language === 'uz' ? 'Sertifikatlar' :
+               language === 'ru' ? 'Сертификаты' :
+               'Certifications'}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              {t('licensesDesc')}
+              {language === 'uz' ? 'Bizning mahsulotlarimiz xalqaro standartlarga muvofiq sertifikatlangan' :
+               language === 'ru' ? 'Наша продукция сертифицирована в соответствии с международными стандартами' :
+               'Our products are certified according to international standards'}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {licenses.map((license) => (
-              <Card
-                key={license.id}
-                className="group hover:shadow-lg transition-shadow duration-300"
-              >
-                <CardHeader className="text-center">
-                  <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
-                    <FileCheck className="w-10 h-10 text-blue-600" />
-                  </div>
-                  <CardTitle className="text-xl text-gray-900">
-                    {license.name}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="text-center space-y-3">
-                  <p className="text-gray-600 text-sm">
-                    {license.description[language]}
-                  </p>
-                  <div className="text-xs text-gray-500 space-y-1">
-                    <p>
-                      <span className="font-medium">
-                        {language === 'uz'
-                          ? 'Berilgan sana:'
-                          : language === 'ru'
-                          ? 'Дата выдачи:'
-                          : 'Issue Date:'}
-                      </span>{' '}
-                      {new Date(license.issueDate).toLocaleDateString()}
-                    </p>
-                    <p>
-                      <span className="font-medium">
-                        {language === 'uz'
-                          ? 'Amal qilish muddati:'
-                          : language === 'ru'
-                          ? 'Действителен до:'
-                          : 'Valid Until:'}
-                      </span>{' '}
-                      {new Date(license.validUntil).toLocaleDateString()}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/HBs_Ag_Cassette.jpg"
+                    alt="HBs Ag Cassette Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  HBs Ag Cassette
+                </CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/anti_tp.jpg"
+                    alt="Anti TP Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  Anti TP
+                </CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/hbs_ag_hcv.jpg"
+                    alt="HBs Ag HCV Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  HBs Ag HCV
+                </CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/hav_igm.jpg"
+                    alt="HAV IgM Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  HAV IgM
+                </CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/hbs_ag_strip.jpg"
+                    alt="HBs Ag Strip Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  HBs Ag Strip
+                </CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/hcv_cassette.jpg"
+                    alt="HCV Cassette Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  HCV Cassette
+                </CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/hcv_strip.jpg"
+                    alt="HCV Strip Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  HCV Strip
+                </CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/hp_ag_cassette.jpg"
+                    alt="HP Ag Cassette Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  HP Ag Cassette
+                </CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/iso_13485.jpg"
+                    alt="ISO 13485 Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  ISO 13485
+                </CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/iso_9001.jpg"
+                    alt="ISO 9001 Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  ISO 9001
+                </CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/hiv_1.2.jpg"
+                    alt="HIV 1.2 Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  HIV 1.2
+                </CardTitle>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="text-center">
+                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+                  <Image
+                    src="/certifications/images/hp_ab_cassette.jpg"
+                    alt="HP Ab Cassette Certificate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardTitle className="text-lg text-gray-900">
+                  HP Ab Cassette
+                </CardTitle>
+              </CardHeader>
+            </Card>
           </div>
         </div>
       </section>
