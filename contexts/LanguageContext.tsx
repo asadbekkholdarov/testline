@@ -24,7 +24,7 @@ const translations = {
     contact: 'Aloqa',
 
     // Home Page
-    heroTitle: 'Testline - Tibbiy diagnostika yechimlarining yetakchisi',
+    heroTitle: 'NAM BIOTEST MCHJ',
     heroDescription:
       "Biz yuqori sifatli tibbiy test va diagnostika vositalarini taqdim etamiz. Sog'liqni saqlash sohasida innovatsion yechimlar bilan xizmat qilamiz.",
     whyTestline: 'Nega Testline?',
