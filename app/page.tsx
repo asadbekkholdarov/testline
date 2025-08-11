@@ -22,7 +22,7 @@ import { licenses } from '@/data/licenses';
 import { products } from '@/data/products';
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const features = [
     {
