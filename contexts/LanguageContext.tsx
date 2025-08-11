@@ -374,8 +374,8 @@ const translations = {
     yearsOfExperienceValue: '10+',
     countriesServed: 'Countries Served',
     countriesServedValue: '5',
-    livesImproved: 'Lives Improved',
-    livesImprovedValue: '50k+',
+    livesImproved: 'Monthly production volume',
+    livesImprovedValue: '5 M',
     readyToGetStarted: 'Ready to Get Started?',
     ctaDescription:
       'Contact us today to learn more about our products and services',
