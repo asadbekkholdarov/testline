@@ -407,17 +407,3 @@ export default function About() {
                     alt="HP Ab Cassette Certificate"
                     width={400}
                     height={600}
-                    className="max-w-none group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
-                  />
-                </div>
-                <CardTitle className="text-lg text-gray-900">
-                  HP Ab Cassette
-                </CardTitle>
-              </CardHeader>
-            </Card>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
