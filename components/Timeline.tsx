@@ -137,47 +137,35 @@ interface TimelineProps {
 
 export default function Timeline({ language }: TimelineProps) {
   const data = timelineData[language] || timelineData.en;
+  
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        {/* Timeline container */}
-        <div className="relative hidden lg:flex justify-between items-center border-t-2 border-gray-300">
-          {data.map((item, idx) => (
-            <div key={idx} className="relative w-1/8 text-center">
-              {/* Dot */}
-              <div className="w-4 h-4 bg-blue-600 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" />
-
-              {/* Content */}
-              <div
-                className={`absolute w-40 ${
-                  idx % 2 === 0 ? 'top-10' : 'bottom-10'
-                } left-1/2 transform -translate-x-1/2`}
-              >
-                <h3 className="text-lg font-bold">{item.year}</h3>
-                <h4 className="text-sm text-blue-600 font-semibold">
-                  {item.title}
-                </h4>
-                <p className="text-sm text-gray-500 mt-1">{item.description}</p>
+        {/* Vertical Timeline */}
+        <div className="relative max-w-4xl mx-auto">
+          {/* Vertical line */}
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-600"></div>
+          
+          {/* Timeline items */}
+          <div className="space-y-12">
+            {data.map((item, idx) => (
+              <div key={idx} className="relative flex items-start">
+                {/* Timeline dot */}
+                <div className="absolute left-6 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+                
+                {/* Content */}
+                <div className="ml-20 bg-white p-6 rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex items-center mb-3">
+                    <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full mr-3">
+                      {item.year}
+                    </span>
+                    <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Tablet and Mobile Grid */}
-        <div className="grid lg:hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
-          {data.map((item, idx) => (
-            <div
-              key={idx}
-              className="relative flex flex-col items-center text-center p-4 border-l-4 border-blue-600 rounded-md shadow-sm bg-gray-50"
-            >
-              <div className="w-4 h-4 bg-blue-600 rounded-full mb-3"></div>
-              <h3 className="text-lg font-bold">{item.year}</h3>
-              <h4 className="text-sm text-blue-600 font-semibold">
-                {item.title}
-              </h4>
-              <p className="text-sm text-gray-500 mt-1">{item.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
