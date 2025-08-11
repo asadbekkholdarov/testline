@@ -138,9 +138,9 @@ export default function About() {
                'Certifications'}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              {language === 'uz' ? 'Bizning mahsulotlarimiz xalqaro standartlarga muvofiq sertifikatlangan' :
-               language === 'ru' ? 'Наша продукция сертифицирована в соответствии с международными стандартами' :
-               'Our products are certified according to international standards'}
+              {language === 'uz' ? 'Bizning mahsulotlarimiz O\'zbekiston milliy talablari va xalqaro standartlarga to\'liq muvofiq ravishda litsenziyalangan va sertifikatlangan.' :
+               language === 'ru' ? 'Наша продукция имеет лицензии и сертифицирована в полном соответствии с национальными требованиями Узбекистана и международными стандартами.' :
+               'Our products are fully licensed and certified in compliance with Uzbekistan national requirements and international standards.'}
             </p>
           </div>
 
