@@ -56,9 +56,7 @@ export default function Home() {
                 <p>
                   {t('heroDescription')}
                 </p>
-                <p>
-                  {t('heroDescription2')}
-                </p>
+              
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
