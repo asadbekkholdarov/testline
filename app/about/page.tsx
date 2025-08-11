@@ -36,58 +36,14 @@ export default function About() {
                  language === 'ru' ? 'О компании ООО «NAM BIOTEST»' :
                  'About NAM BIOTEST LLC'}
               </h1>
-              <div className="text-lg text-gray-600 leading-relaxed space-y-4">
-                <p>
-                  {language === 'uz' ? 
-                    'NAM BIOTEST MCHJ — bu O\'zbekiston Respublikasi, Namangan shahrida joylashgan, in-vitro diagnostika (IVD) sohasiga ixtisoslashgan biotexnologiya kompaniyasi. 2018-yilda tashkil etilgan kompaniyamiz "Sog\'lom va xavfsiz hayot uchun innovatsiyalar" shiorini o\'z oldiga maqsad qilib qo\'ygan bo\'lib, ilmiy-tadqiqot va sanoat ishlab chiqarish uchun bir nechta IVD texnologiya platformalarini ishlab chiqdi.' :
-                   language === 'ru' ?
-                    'ООО «NAM BIOTEST» — биотехнологическая компания, расположенная в городе Наманган, Республика Узбекистан, специализирующаяся на in-vitro диагностике (IVD). Основанная в 2018 году, компания следует миссии «Инновации ради здоровой и безопасной жизни», разрабатывая несколько технологических платформ IVD для научных исследований и промышленного производства.' :
-                    'NAM BIOTEST LLC is a biotechnology company based in Namangan, Republic of Uzbekistan, specializing in in-vitro diagnostics (IVD). Since its establishment in 2018, our company has been driven by the mission "Innovations for a Healthy and Secure Life", developing multiple IVD technology platforms for both research and large-scale manufacturing.'
-                  }
-                </p>
-                
-                <p>
-                  {language === 'uz' ? 'Biz 100 dan ortiq diagnostik parametrlarni ishlab chiqaramiz, jumladan:' :
-                   language === 'ru' ? 'Мы выпускаем более 100 диагностических параметров, охватывающих:' :
-                   'We produce over 100 diagnostic parameters, covering a wide range of applications, including:'}
-                </p>
-                
-                <ul className="list-disc list-inside ml-4 space-y-1">
-                  <li>{language === 'uz' ? 'Yurak-qon tomir kasalliklari' : language === 'ru' ? 'Сердечно-сосудистые заболевания' : 'Cardiovascular diseases'}</li>
-                  <li>{language === 'uz' ? 'Jigar va ovqat hazm qilish tizimi kasalliklari' : language === 'ru' ? 'Заболевания печени и ЖКТ' : 'Liver and gastrointestinal diseases'}</li>
-                  <li>{language === 'uz' ? 'Yuqumli kasalliklar' : language === 'ru' ? 'Инфекционные заболевания' : 'Infectious diseases'}</li>
-                  <li>{language === 'uz' ? 'Yallig\'lanish ko\'rsatkichlari' : language === 'ru' ? 'Воспалительные маркеры' : 'Inflammatory markers'}</li>
-                  <li>{language === 'uz' ? 'Giyohvandlik vositalarini aniqlash' : language === 'ru' ? 'Выявление наркотических веществ' : 'Drug abuse detection'}</li>
-                  <li>{language === 'uz' ? 'Boshqa ko\'plab klinik yo\'nalishlar' : language === 'ru' ? 'И многие другие области медицины' : 'And many other clinical fields'}</li>
-                </ul>
-                
-                <p>
-                  {language === 'uz' ? 
-                    'Mahsulot assortimentimizga kolloid oltin asosidagi ekspress testlar va immunoflyuorestsent POCT analizatorlar (FIA) kiradi. Ular laboratoriya, shifoxona va klinikalarda professional foydalanish uchun mo\'ljallangan.' :
-                   language === 'ru' ?
-                    'Наш ассортимент включает экспресс-тесты на основе коллоидного золота и иммунофлуоресцентные анализаторы POCT (FIA), предназначенные для профессионального использования в лабораториях, больницах и клиниках.' :
-                    'Our product portfolio includes colloidal gold rapid tests and immunofluorescence POCT analyzers (FIA), designed for professional use in laboratories, hospitals, and clinics.'
-                  }
-                </p>
-                
-                <p>
-                  {language === 'uz' ? 
-                    'Biz uchun sifat – bu hayot. Kompaniyamiz ISO 9001 va ISO 13485 sertifikatlariga ega bo\'lib, mahsulotlarimizning aksariyati O\'zbekiston milliy ro\'yxatidan o\'tgan. Ishlab chiqarish jarayonlari qat\'iy sifat nazorati tizimi asosida olib boriladi va yuqori sezuvchanlik, aniqlik hamda ishonchlilik kafolatlanadi.' :
-                   language === 'ru' ?
-                    'Мы рассматриваем качество как основу жизни. Компания имеет сертификаты ISO 9001 и ISO 13485, а также национальные регистрации Республики Узбекистан на большинство продукции. Все производственные процессы осуществляются в строгом соответствии с системами менеджмента качества, что обеспечивает высокую чувствительность, точность и надежность.' :
-                    'We treat quality as life, holding ISO 9001 and ISO 13485 certifications, as well as Uzbekistan national registrations for the majority of our products. All manufacturing processes are conducted under strict quality management systems, ensuring high sensitivity, accuracy, and reliability.'
-                  }
-                </p>
-                
-                <p>
-                  {language === 'uz' ? 
-                    'NAM BIOTEST mijozlarga raqobatbardosh mahsulotlar va professional xizmatlar taqdim etishga sodiqdir. Biz "Avvalo sifat, avvalo ishonch" tamoyiliga amal qilamiz va hamkorlarimiz bilan birgalikda sog\'lom kelajak barpo etishga intilamiz.' :
-                   language === 'ru' ?
-                    'NAM BIOTEST стремится предоставлять клиентам конкурентоспособные продукты и профессиональный сервис, придерживаясь принципа «Качество прежде всего, доверие прежде всего». Мы открыты для сотрудничества с партнёрами по всему миру и совместного создания здорового будущего.' :
-                    'At NAM BIOTEST, we are committed to providing our customers with the most competitive products and professional service, upholding our principle of "Quality First, Credibility First." We look forward to working with partners worldwide to build a healthier future together.'
-                  }
-                </p>
-              </div>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                {language === 'uz' ? 
+                  'NAM BIOTEST MCHJ — bu O\'zbekiston Respublikasi, Namangan shahrida joylashgan, in-vitro diagnostika (IVD) sohasiga ixtisoslashgan biotexnologiya kompaniyasi. 2018-yilda tashkil etilgan kompaniyamiz "Sog\'lom va xavfsiz hayot uchun innovatsiyalar" shiorini o\'z oldiga maqsad qilib qo\'ygan bo\'lib, ilmiy-tadqiqot va sanoat ishlab chiqarish uchun bir nechta IVD texnologiya platformalarini ishlab chiqdi.' :
+                 language === 'ru' ?
+                  'ООО «NAM BIOTEST» — биотехнологическая компания, расположенная в городе Наманган, Республика Узбекистан, специализирующаяся на in-vitro диагностике (IVD). Основанная в 2018 году, компания следует миссии «Инновации ради здоровой и безопасной жизни», разрабатывая несколько технологических платформ IVD для научных исследований и промышленного производства.' :
+                  'NAM BIOTEST LLC is a biotechnology company based in Namangan, Republic of Uzbekistan, specializing in in-vitro diagnostics (IVD). Since its establishment in 2018, our company has been driven by the mission "Innovations for a Healthy and Secure Life", developing multiple IVD technology platforms for both research and large-scale manufacturing.'
+                }
+              </p>
             </div>
             <div className="relative">
               <Image
@@ -97,6 +53,57 @@ export default function About() {
                 height={400}
                 className="rounded-2xl shadow-lg"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Information Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-8">
+            <div className="text-lg text-gray-600 leading-relaxed space-y-6">
+              <p>
+                {language === 'uz' ? 'Biz 100 dan ortiq diagnostik parametrlarni ishlab chiqaramiz, jumladan:' :
+                 language === 'ru' ? 'Мы выпускаем более 100 диагностических параметров, охватывающих:' :
+                 'We produce over 100 diagnostic parameters, covering a wide range of applications, including:'}
+              </p>
+              
+              <ul className="list-disc list-inside ml-4 space-y-2 text-gray-700">
+                <li>{language === 'uz' ? 'Yurak-qon tomir kasalliklari' : language === 'ru' ? 'Сердечно-сосудистые заболевания' : 'Cardiovascular diseases'}</li>
+                <li>{language === 'uz' ? 'Jigar va ovqat hazm qilish tizimi kasalliklari' : language === 'ru' ? 'Заболевания печени и ЖКТ' : 'Liver and gastrointestinal diseases'}</li>
+                <li>{language === 'uz' ? 'Yuqumli kasalliklar' : language === 'ru' ? 'Инфекционные заболевания' : 'Infectious diseases'}</li>
+                <li>{language === 'uz' ? 'Yallig\'lanish ko\'rsatkichlari' : language === 'ru' ? 'Воспалительные маркеры' : 'Inflammatory markers'}</li>
+                <li>{language === 'uz' ? 'Giyohvandlik vositalarini aniqlash' : language === 'ru' ? 'Выявление наркотических веществ' : 'Drug abuse detection'}</li>
+                <li>{language === 'uz' ? 'Boshqa ko\'plab klinik yo\'nalishlar' : language === 'ru' ? 'И многие другие области медицины' : 'And many other clinical fields'}</li>
+              </ul>
+              
+              <p>
+                {language === 'uz' ? 
+                  'Mahsulot assortimentimizga kolloid oltin asosidagi ekspress testlar va immunoflyuorestsent POCT analizatorlar (FIA) kiradi. Ular laboratoriya, shifoxona va klinikalarda professional foydalanish uchun mo\'ljallangan.' :
+                 language === 'ru' ?
+                  'Наш ассортимент включает экспресс-тесты на основе коллоидного золота и иммунофлуоресцентные анализаторы POCT (FIA), предназначенные для профессионального использования в лабораториях, больницах и клиниках.' :
+                  'Our product portfolio includes colloidal gold rapid tests and immunofluorescence POCT analyzers (FIA), designed for professional use in laboratories, hospitals, and clinics.'
+                }
+              </p>
+              
+              <p>
+                {language === 'uz' ? 
+                  'Biz uchun sifat – bu hayot. Kompaniyamiz ISO 9001 va ISO 13485 sertifikatlariga ega bo\'lib, mahsulotlarimizning aksariyati O\'zbekiston milliy ro\'yxatidan o\'tgan. Ishlab chiqarish jarayonlari qat\'iy sifat nazorati tizimi asosida olib boriladi va yuqori sezuvchanlik, aniqlik hamda ishonchlilik kafolatlanadi.' :
+                 language === 'ru' ?
+                  'Мы рассматриваем качество как основу жизни. Компания имеет сертификаты ISO 9001 и ISO 13485, а также национальные регистрации Республики Узбекистан на большинство продукции. Все производственные процессы осуществляются в строгом соответствии с системами менеджмента качества, что обеспечивает высокую чувствительность, точность и надежность.' :
+                  'We treat quality as life, holding ISO 9001 and ISO 13485 certifications, as well as Uzbekistan national registrations for the majority of our products. All manufacturing processes are conducted under strict quality management systems, ensuring high sensitivity, accuracy, and reliability.'
+                }
+              </p>
+              
+              <p>
+                {language === 'uz' ? 
+                  'NAM BIOTEST mijozlarga raqobatbardosh mahsulotlar va professional xizmatlar taqdim etishga sodiqdir. Biz "Avvalo sifat, avvalo ishonch" tamoyiliga amal qilamiz va hamkorlarimiz bilan birgalikda sog\'lom kelajak barpo etishga intilamiz.' :
+                 language === 'ru' ?
+                  'NAM BIOTEST стремится предоставлять клиентам конкурентоспособные продукты и профессиональный сервис, придерживаясь принципа «Качество прежде всего, доверие прежде всего». Мы открыты для сотрудничества с партнёрами по всему миру и совместного создания здорового будущего.' :
+                  'At NAM BIOTEST, we are committed to providing our customers with the most competitive products and professional service, upholding our principle of "Quality First, Credibility First." We look forward to working with partners worldwide to build a healthier future together.'
+                }
+              </p>
             </div>
           </div>
         </div>
