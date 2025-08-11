@@ -26,7 +26,7 @@ const translations = {
     // Home Page
     heroTitle: 'NAM BIOTEST MCHJ',
     heroDescription:
-      "Biz yuqori sifatli tibbiy test va diagnostika vositalarini taqdim etamiz. Sog'liqni saqlash sohasida innovatsion yechimlar bilan xizmat qilamiz.",
+      "NAM BIOTEST MCHJ — bu O‘zbekiston Respublikasi, Namangan shahrida joylashgan, in-vitro diagnostika (IVD) sohasiga ixtisoslashgan biotexnologiya kompaniyasi. 2018-yilda tashkil etilgan kompaniyamiz “Sog‘lom va xavfsiz hayot uchun innovatsiyalar” shiorini o‘z oldiga maqsad qilib qo‘ygan bo‘lib, ilmiy-tadqiqot va sanoat ishlab chiqarish uchun bir nechta IVD texnologiya platformalarini ishlab chiqdi.",
     whyTestline: 'Nega Testline?',
     whyTestlineDesc:
       'Bizning mahsulotlarimiz eng yuqori sifat standartlariga javob beradi va jahon bozorida tanilgan.',
