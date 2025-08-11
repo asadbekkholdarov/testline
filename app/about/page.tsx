@@ -152,7 +152,7 @@ export default function About() {
                     src="/certifications/images/HBs_Ag_Cassette.jpg"
                     alt="HBs Ag Cassette Certificate"
                     width={0}
-                    height={0}
+                    height={10}
                     sizes="100vw"
                     className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
