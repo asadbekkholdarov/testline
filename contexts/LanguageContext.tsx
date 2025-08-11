@@ -291,7 +291,7 @@ const translations = {
     contact: 'Contact Us',
 
     // Home Page
-    heroTitle: 'Testline - Leading Medical Diagnostic Solutions',
+    heroTitle: 'NAM BIOTEST LLC',
     heroDescription:
       'We provide high-quality medical tests and diagnostic solutions. Serving healthcare with innovative solutions.',
     whyTestline: 'Why Testline?',
