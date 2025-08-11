@@ -47,11 +47,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <span className="text-gray-400">sohibjon@testline.uz</span>
+                <span className="text-gray-400">nambiotest@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4" />
-                <span className="text-gray-400">Namangan, Uzbekistan</span>
+                <span className="text-gray-400">{t('contactAddress')}</span>
               </div>
             </div>
           </div>
