@@ -240,8 +240,8 @@ const translations = {
     yearsOfExperienceValue: '10+',
     countriesServed: 'Страны обслуживания',
     countriesServedValue: '5',
-    livesImproved: 'Улучшенные жизни',
-    livesImprovedValue: '50k+',
+    livesImproved: 'ежемесячное производство',
+    livesImprovedValue: '5 M',
     readyToGetStarted: 'Готовы начать?',
     ctaDescription:
       'Свяжитесь с нами, чтобы узнать больше о наших продуктах и услугах',
