@@ -154,7 +154,7 @@ export default function About() {
                     width={0}
                     height={100}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -172,7 +172,7 @@ export default function About() {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -190,7 +190,7 @@ export default function About() {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -208,7 +208,7 @@ export default function About() {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -226,7 +226,7 @@ export default function About() {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -244,7 +244,7 @@ export default function About() {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -262,7 +262,7 @@ export default function About() {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -280,7 +280,7 @@ export default function About() {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -298,7 +298,7 @@ export default function About() {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -316,7 +316,7 @@ export default function About() {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -334,7 +334,7 @@ export default function About() {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -352,7 +352,7 @@ export default function About() {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
