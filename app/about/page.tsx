@@ -151,8 +151,8 @@ export default function About() {
                   <Image
                     src="/certifications/images/HBs_Ag_Cassette.jpg"
                     alt="HBs Ag Cassette Certificate"
-                    width={400}
-                    height={1000}
+                    width={200}
+                    height={600}
                     className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
