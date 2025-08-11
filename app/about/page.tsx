@@ -146,7 +146,7 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/HBs_Ag_Cassette.jpg"
@@ -164,7 +164,7 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/anti_tp.jpg"
@@ -182,7 +182,7 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hbs_ag_hcv.jpg"
@@ -200,7 +200,7 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hav_igm.jpg"
@@ -218,7 +218,7 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hbs_ag_strip.jpg"
@@ -236,7 +236,7 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hcv_cassette.jpg"
@@ -254,7 +254,7 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hcv_strip.jpg"
@@ -272,7 +272,7 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hp_ag_cassette.jpg"
@@ -290,7 +290,7 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/iso_13485.jpg"
@@ -308,7 +308,7 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/iso_9001.jpg"
@@ -326,7 +326,7 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hiv_1.2.jpg"
@@ -344,7 +344,7 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
+              <CardHeader className="text-center h-96">
                 <div className="w-full relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hp_ab_cassette.jpg"
