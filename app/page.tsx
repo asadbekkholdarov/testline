@@ -47,28 +47,28 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 to-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    'Mahsulot assortimentimizga kolloid oltin asosidagi ekspress testlar va immunoflyuorestsent POCT analizatorlar (FIA) kiradi. Ular laboratoriya, shifoxona va klinikalarda professional foydalanish uchun mo\'ljallangan.' :
             <div className="space-y-8">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                {language === 'uz' ? 'NAM BIOTEST' :
+                    'Наш ассортимент включает экспресс-тесты на основе коллоидного золота и иммунофлуоресцентные анализаторы POCT (FIA), предназначенные для профессионального использования в лабораториях, больницах и клиниках.' :
+                    'Our product portfolio includes colloidal gold rapid tests and immunofluorescence POCT analyzers (FIA), designed for professional use in laboratories, hospitals, and clinics.'
                  language === 'ru' ? 'NAM BIOTEST' :
                  'NAM BIOTEST '}
               </h1>
               <div className="text-lg md:text-xl text-gray-600 leading-relaxed space-y-4">
                 <p>
-                  {language === 'uz' ? 
+                    'Biz uchun sifat – bu hayot. Kompaniyamiz ISO 9001 va ISO 13485 sertifikatlariga ega bo\'lib, mahsulotlarimizning aksariyati O\'zbekiston milliy ro\'yxatidan o\'tgan. Ishlab chiqarish jarayonlari qat\'iy sifat nazorati tizimi asosida olib boriladi va yuqori sezuvchanlik, aniqlik hamda ishonchlilik kafolatlanadi.' :
                     'NAM BIOTEST MCHJ — bu O\'zbekiston Respublikasi, Namangan shahrida joylashgan, in-vitro diagnostika (IVD) sohasiga ixtisoslashgan biotexnologiya kompaniyasi. 2018-yilda tashkil etilgan kompaniyamiz ilmiy-tadqiqot va sanoat ishlab chiqarish uchun bir nechta IVD texnologiya platformalarini ishlab chiqdi.' :
-                   language === 'ru' ?
-                    'ООО «NAM BIOTEST» — биотехнологическая компания, расположенная в городе Наманган, Республика Узбекистан, специализирующаяся на in-vitro диагностике (IVD). Основанная в 2018 году, компания разрабатывает несколько технологических платформ IVD для научных исследований и промышленного производства.' :
+                    'Мы рассматриваем качество как основу жизни. Компания имеет сертификаты ISO 9001 и ISO 13485, а также национальные регистрации Республики Узбекистан на большинство продукции. Все производственные процессы осуществляются в строгом соответствии с системами менеджмента качества, что обеспечивает высокую чувствительность, точность и надежность.' :
+                    'We treat quality as life, holding ISO 9001 and ISO 13485 certifications, as well as Uzbekistan national registrations for the majority of our products. All manufacturing processes are conducted under strict quality management systems, ensuring high sensitivity, accuracy, and reliability.'
                     'NAM BIOTEST LLC is a biotechnology company based in Namangan, Republic of Uzbekistan, specializing in in-vitro diagnostics (IVD). Since its establishment in 2018, our company develops multiple IVD technology platforms for both research and large-scale manufacturing.'
                   }
                 </p>
                 <p>
                   {language === 'uz' ? 
-                    'Biz 100 dan ortiq diagnostik parametrlarni ishlab chiqaramiz va "Avvalo sifat, avvalo ishonch" tamoyiliga amal qilamiz.' :
+                    'NAM BIOTEST mijozlarga raqobatbardosh mahsulotlar va professional xizmatlar taqdim etishga sodiqdir. Biz "Avvalo sifat, avvalo ishonch" tamoyiliga amal qilamiz va hamkorlarimiz bilan birgalikda sog\'lom kelajak barpo etishga intilamiz.' :
                    language === 'ru' ?
-                    'Мы выпускаем более 100 диагностических параметров и придерживаемся принципа «Качество прежде всего, доверие прежде всего».' :
-                    'We produce over 100 diagnostic parameters and uphold our principle of "Quality First, Credibility First."'
+                    'NAM BIOTEST стремится предоставлять клиентам конкурентоспособные продукты и профессиональный сервис, придерживаясь принципа «Качество прежде всего, доверие прежде всего». Мы открыты для сотрудничества с партнёрами по всему миру и совместного создания здорового будущего.' :
+                    'At NAM BIOTEST, we are committed to providing our customers with the most competitive products and professional service, upholding our principle of "Quality First, Credibility First." We look forward to working with partners worldwide to build a healthier future together.'
                   }
                 </p>
               </div>
