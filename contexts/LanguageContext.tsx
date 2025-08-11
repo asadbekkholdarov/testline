@@ -293,7 +293,7 @@ const translations = {
     // Home Page
     heroTitle: 'NAM BIOTEST LLC',
     heroDescription:
-      'We provide high-quality medical tests and diagnostic solutions. Serving healthcare with innovative solutions.',
+      'NAM BIOTEST LLC is a biotechnology company based in Namangan, Republic of Uzbekistan, specializing in in-vitro diagnostics (IVD). Since its establishment in 2018, our company has been driven by the mission “Innovations for a Healthy and Secure Life”, developing multiple IVD technology platforms for both research and large-scale manufacturing.',
     whyTestline: 'Why Testline?',
     whyTestlineDesc:
       'Our products meet the highest quality standards and are recognized in the global market.',
