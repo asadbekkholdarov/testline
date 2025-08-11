@@ -151,10 +151,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/HBs_Ag_Cassette.jpg"
                     alt="HBs Ag Cassette Certificate"
-                    width={0}
-                    height={100}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -169,10 +168,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/anti_tp.jpg"
                     alt="Anti TP Certificate"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -187,10 +185,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/hbs_ag_hcv.jpg"
                     alt="HBs Ag HCV Certificate"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -205,10 +202,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/hav_igm.jpg"
                     alt="HAV IgM Certificate"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -223,10 +219,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/hbs_ag_strip.jpg"
                     alt="HBs Ag Strip Certificate"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -241,10 +236,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/hcv_cassette.jpg"
                     alt="HCV Cassette Certificate"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -259,10 +253,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/hcv_strip.jpg"
                     alt="HCV Strip Certificate"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -277,10 +270,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/hp_ag_cassette.jpg"
                     alt="HP Ag Cassette Certificate"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -295,10 +287,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/iso_13485.jpg"
                     alt="ISO 13485 Certificate"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -313,10 +304,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/iso_9001.jpg"
                     alt="ISO 9001 Certificate"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -331,10 +321,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/hiv_1.2.jpg"
                     alt="HIV 1.2 Certificate"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -349,10 +338,9 @@ export default function About() {
                   <Image
                     src="/certifications/images/hp_ab_cassette.jpg"
                     alt="HP Ab Cassette Certificate"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
