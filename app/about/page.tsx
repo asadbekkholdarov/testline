@@ -62,7 +62,7 @@ export default function About() {
       <section className="py-15 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
-            <div className="text-lg text-gray-600 leading-relaxed space-y-6">
+            <div className="text-lg text-gray-600 leading-relaxed space-y-5">
               <p>
                 {language === 'uz' ? 'Biz 100 dan ortiq diagnostik parametrlarni ishlab chiqaramiz, jumladan:' :
                  language === 'ru' ? 'Мы выпускаем более 100 диагностических параметров, охватывающих:' :
