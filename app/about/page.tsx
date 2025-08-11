@@ -10,15 +10,6 @@ export default function About() {
   const { t, language } = useLanguage();
 
   const stats = [
-    { 
-      icon: Users, 
-      label: language === 'uz' ? 'Oylik ishlab chiqarish quvvati' : 
-             language === 'ru' ? 'Месячная производственная мощность' : 
-             'Monthly Production Capacity', 
-      value: language === 'uz' ? '5 mln test' : 
-             language === 'ru' ? '5 млн тестов' : 
-             '5M tests' 
-    },
     {
       icon: Award,
       label: t('yearsOfExperience'),
