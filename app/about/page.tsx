@@ -18,6 +18,11 @@ export default function About() {
       value: t('yearsOfExperienceValue'),
     },
     {
+      icon: Users,
+      label: t('happyClients'),
+      value: t('happyClientsValue'),
+    },
+    {
       icon: Globe,
       label: t('countriesServed'),
       value: t('countriesServedValue'),
