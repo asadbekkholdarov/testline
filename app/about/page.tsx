@@ -152,7 +152,7 @@ export default function About() {
                     src="/certifications/images/HBs_Ag_Cassette.jpg"
                     alt="HBs Ag Cassette Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -168,7 +168,7 @@ export default function About() {
                     src="/certifications/images/anti_tp.jpg"
                     alt="Anti TP Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -184,7 +184,7 @@ export default function About() {
                     src="/certifications/images/hbs_ag_hcv.jpg"
                     alt="HBs Ag HCV Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -200,7 +200,7 @@ export default function About() {
                     src="/certifications/images/hav_igm.jpg"
                     alt="HAV IgM Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -216,7 +216,7 @@ export default function About() {
                     src="/certifications/images/hbs_ag_strip.jpg"
                     alt="HBs Ag Strip Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -232,7 +232,7 @@ export default function About() {
                     src="/certifications/images/hcv_cassette.jpg"
                     alt="HCV Cassette Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -248,7 +248,7 @@ export default function About() {
                     src="/certifications/images/hcv_strip.jpg"
                     alt="HCV Strip Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -264,7 +264,7 @@ export default function About() {
                     src="/certifications/images/hp_ag_cassette.jpg"
                     alt="HP Ag Cassette Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -280,7 +280,7 @@ export default function About() {
                     src="/certifications/images/iso_13485.jpg"
                     alt="ISO 13485 Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -296,7 +296,7 @@ export default function About() {
                     src="/certifications/images/iso_9001.jpg"
                     alt="ISO 9001 Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -312,7 +312,7 @@ export default function About() {
                     src="/certifications/images/hiv_1.2.jpg"
                     alt="HIV 1.2 Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -328,7 +328,7 @@ export default function About() {
                     src="/certifications/images/hp_ab_cassette.jpg"
                     alt="HP Ab Cassette Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-90"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
