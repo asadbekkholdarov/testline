@@ -50,9 +50,9 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                {language === 'uz' ? 'NAM BIOTEST - Sog\'lom va xavfsiz hayot uchun innovatsiyalar' :
-                 language === 'ru' ? 'NAM BIOTEST - Инновации ради здоровой и безопасной жизни' :
-                 'NAM BIOTEST - Innovations for a Healthy and Secure Life'}
+                {language === 'uz' ? 'NAM BIOTEST' :
+                 language === 'ru' ? 'NAM BIOTEST' :
+                 'NAM BIOTEST '}
               </h1>
               <div className="text-lg md:text-xl text-gray-600 leading-relaxed space-y-4">
                 <p>
