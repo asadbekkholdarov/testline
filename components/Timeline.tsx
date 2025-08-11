@@ -3,106 +3,130 @@ import React from 'react';
 const timelineData = {
   uz: [
     {
-      year: '2020',
+      year: '2018',
       title: 'Boshlanish',
       description:
-        'Testline kompaniyasi tashkil etildi va birinchi mahsulotlar ishlab chiqarildi.',
+        'NAM BIOTEST MCHJ tashkil etildi va in-vitro diagnostika sohasida faoliyat boshladi.',
+    },
+    {
+      year: '2019',
+      title: 'Birinchi litsenziya',
+      description: 'Kompaniya o\'zining birinchi litsenziyasi asosida rasmiy faoliyatni boshladi.',
+    },
+    {
+      year: '2020',
+      title: 'COVID-19 ga qarshi hissa',
+      description: 'O\'zbekistonda COVID-19 ekspress testlarini ishlab chiqargan birinchi mahalliy kompaniya sifatida pandemiyaga qarshi kurashga yordam berdi.',
     },
     {
       year: '2021',
-      title: 'Innovatsion mahsulotlar',
-      description: 'Yangi innovatsion tibbiy testlar bozorga chiqarildi.',
+      title: 'Milliy sertifikatlar (1-bosqich)',
+      description: 'HBsAg Strip, HCV Strip, HIV Kasseta, TP Kasseta mahsulotlariga O\'zbekiston milliy sertifikatlari olindi.',
     },
     {
       year: '2022',
-      title: 'Xalqaro hamkorlik',
-      description: "Xalqaro hamkorlik va eksport yo'lga qo'yildi.",
+      title: 'Milliy sertifikatlar (2-bosqich)',
+      description: 'HCV Kasseta, HBsAg Kasseta, H.Pylori Ab Kasseta, H.Pylori Ag Kasseta, HAV IgM Kasseta va boshqa ekspress testlarga milliy sertifikatlar olindi.',
     },
     {
       year: '2023',
-      title: 'Sifat sertifikatlari',
-      description: "Mahsulotlarimiz xalqaro sifat sertifikatlariga ega bo'ldi.",
+      title: 'Xalqaro sifat sertifikatlari',
+      description: 'Kompaniya ISO 9001 va ISO 13485 xalqaro sifat boshqaruv tizimi sertifikatlariga ega bo\'ldi.',
     },
     {
       year: '2024',
-      title: 'Raqamli rivojlanish',
-      description:
-        'Raqamli texnologiyalar joriy qilindi va onlayn xizmatlar kengaytirildi.',
+      title: 'Yangi imkoniyatlar',
+      description: 'new.cooperation.uz mahalliy ishlab chiqaruvchilar platformasiga qo\'shildi va yangi turdagi tezkor diagnostik testlar ishlab chiqara boshladi.',
     },
     {
       year: '2025',
-      title: 'Kelajak sari',
-      description:
-        'Yangi bozorlarga chiqish va mahsulotlar assortimentini kengaytirish rejalashtirilmoqda.',
+      title: 'FIA POCT platformasi va kengaytirilgan DOA testlari',
+      description: 'Kompaniya o\'zining birinchi Immunoflyuorestsent FIA POCT platformasini ishga tushirdi va 80 dan ortiq turdagi giyohvandlik vositalarini aniqlash ekspress testlarini ishlab chiqara boshladi.',
     },
   ],
   ru: [
     {
-      year: '2020',
-      title: 'Начало',
+      year: '2018',
+      title: 'Основание',
       description:
-        'Компания Testline была основана и выпустила первые продукты.',
+        'Основано ООО «NAM BIOTEST», специализирующееся на in-vitro диагностике.',
+    },
+    {
+      year: '2019',
+      title: 'Первая лицензия',
+      description: 'Начало официальной деятельности на основе первой производственной лицензии.',
+    },
+    {
+      year: '2020',
+      title: 'Вклад в борьбу с COVID-19',
+      description: 'Признана первой локальной компанией в Узбекистане, производящей экспресс-тесты на COVID-19, и внесшей значительный вклад в борьбу с пандемией.',
     },
     {
       year: '2021',
-      title: 'Инновационные продукты',
-      description: 'На рынок выведены новые инновационные медицинские тесты.',
+      title: 'Национальные сертификаты (1-й этап)',
+      description: 'Получены национальные сертификаты Республики Узбекистан на HBsAg Стрип, HCV Стрип, HIV Кассету и TP Кассету.',
     },
     {
       year: '2022',
-      title: 'Международное сотрудничество',
-      description: 'Налажено международное сотрудничество и экспорт.',
+      title: 'Национальные сертификаты (2-й этап)',
+      description: 'Получены национальные сертификаты на HCV Кассету, HBsAg Кассету, H.Pylori Ab Кассету, H.Pylori Ag Кассету, HAV IgM Кассету и другие экспресс-тесты.',
     },
     {
       year: '2023',
-      title: 'Сертификаты качества',
-      description: 'Наши продукты получили международные сертификаты качества.',
+      title: 'Международные сертификаты качества',
+      description: 'Получены международные сертификаты систем менеджмента качества ISO 9001 и ISO 13485.',
     },
     {
       year: '2024',
-      title: 'Цифровое развитие',
-      description: 'Внедрены цифровые технологии и расширены онлайн-сервисы.',
+      title: 'Новые возможности',
+      description: 'Присоединились к платформе местных производителей new.cooperation.uz и начали выпуск расширенного ассортимента экспресс-диагностических тестов.',
     },
     {
       year: '2025',
-      title: 'В будущее',
-      description:
-        'Планируется выход на новые рынки и расширение ассортимента продуктов.',
+      title: 'Платформа FIA POCT и расширенные тесты на наркотики',
+      description: 'Запущена первая иммунофлуоресцентная платформа FIA POCT и начато производство более 80 видов экспресс-тестов для выявления наркотических веществ.',
     },
   ],
   en: [
     {
-      year: '2020',
+      year: '2018',
       title: 'Foundation',
-      description: 'Testline was founded and launched its first products.',
+      description: 'NAM BIOTEST LLC was founded, focusing on in-vitro diagnostics.',
+    },
+    {
+      year: '2019',
+      title: 'First License',
+      description: 'Began official operations under the company\'s first manufacturing license.',
+    },
+    {
+      year: '2020',
+      title: 'Contribution Against COVID-19',
+      description: 'Recognized as the first local company in Uzbekistan to manufacture COVID-19 rapid tests, contributing to the country\'s pandemic response.',
     },
     {
       year: '2021',
-      title: 'Innovative Products',
-      description:
-        'New innovative medical tests were introduced to the market.',
+      title: 'National Certifications (Phase 1)',
+      description: 'Received Uzbekistan national certifications for HBsAg Strips, HCV Strips, HIV Cassettes, and TP Cassettes.',
     },
     {
       year: '2022',
-      title: 'International Collaboration',
-      description: 'Established international partnerships and began exports.',
+      title: 'National Certifications (Phase 2)',
+      description: 'Received Uzbekistan national certifications for HCV Cassettes, HBsAg Cassettes, H.Pylori Ab Cassettes, H.Pylori Ag Cassettes, HAV IgM Cassettes, and other rapid tests.',
     },
     {
       year: '2023',
-      title: 'Quality Certifications',
-      description:
-        'Our products received international quality certifications.',
+      title: 'International Quality Certifications',
+      description: 'Achieved ISO 9001 and ISO 13485 international quality management system certifications.',
     },
     {
       year: '2024',
-      title: 'Digital Growth',
-      description:
-        'Implemented digital technologies and expanded online services.',
+      title: 'New Opportunities',
+      description: 'Joined the new.cooperation.uz local manufacturers platform and expanded production with more types of rapid diagnostic tests.',
     },
     {
       year: '2025',
-      title: 'Looking Ahead',
-      description: 'Plans to enter new markets and expand the product range.',
+      title: 'FIA POCT Platform & Expanded DOA Tests',
+      description: 'Launched the company\'s first Immunofluorescence FIA POCT platform and began producing over 80 types of drug abuse rapid tests.',
     },
   ],
 };
@@ -119,7 +143,7 @@ export default function Timeline({ language }: TimelineProps) {
         {/* Timeline container */}
         <div className="relative hidden lg:flex justify-between items-center border-t-2 border-gray-300">
           {data.map((item, idx) => (
-            <div key={idx} className="relative w-1/6 text-center">
+            <div key={idx} className="relative w-1/8 text-center">
               {/* Dot */}
               <div className="w-4 h-4 bg-blue-600 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" />
 
