@@ -78,8 +78,8 @@ export default function Home() {
                   size="lg"
                   className="bg-blue-600 hover:bg-blue-700"
                 >
-                  <Link href="/products">
-                    {t('products')} <ArrowRight className="ml-2 w-5 h-5" />
+                  <Link href="/about">
+                    {t('about')} <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
