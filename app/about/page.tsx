@@ -146,13 +146,13 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/HBs_Ag_Cassette.jpg"
                     alt="HBs Ag Cassette Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -162,13 +162,13 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/anti_tp.jpg"
                     alt="Anti TP Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -178,13 +178,13 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hbs_ag_hcv.jpg"
                     alt="HBs Ag HCV Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -194,13 +194,13 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hav_igm.jpg"
                     alt="HAV IgM Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -210,13 +210,13 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hbs_ag_strip.jpg"
                     alt="HBs Ag Strip Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -226,13 +226,13 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hcv_cassette.jpg"
                     alt="HCV Cassette Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -242,13 +242,13 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hcv_strip.jpg"
                     alt="HCV Strip Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -258,13 +258,13 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hp_ag_cassette.jpg"
                     alt="HP Ag Cassette Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -274,13 +274,13 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/iso_13485.jpg"
                     alt="ISO 13485 Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -290,13 +290,13 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/iso_9001.jpg"
                     alt="ISO 9001 Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -306,13 +306,13 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hiv_1.2.jpg"
                     alt="HIV 1.2 Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
@@ -322,13 +322,13 @@ export default function About() {
             </Card>
 
             <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <div className="w-full h-48 relative mb-4 overflow-hidden rounded-lg">
+              <CardHeader className="text-center h-80">
+                <div className="w-full h-56 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/hp_ab_cassette.jpg"
                     alt="HP Ab Cassette Certificate"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg] h-full"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
                   />
                 </div>
                 <CardTitle className="text-lg text-gray-900">
