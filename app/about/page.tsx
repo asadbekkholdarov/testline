@@ -147,7 +147,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="group hover:shadow-lg transition-shadow duration-300">
               <CardHeader className="text-center">
-                <div className="w-100 relative mb-4 overflow-hidden rounded-lg">
+                <div className="w-50 relative mb-4 overflow-hidden rounded-lg">
                   <Image
                     src="/certifications/images/HBs_Ag_Cassette.jpg"
                     alt="HBs Ag Cassette Certificate"
