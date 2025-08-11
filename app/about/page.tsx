@@ -145,15 +145,15 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-       <Card className="group hover:shadow-lg transition-shadow duration-300">
-  <div className="w-full relative rounded-lg">
+       <Card className="group hover:shadow-lg transition-shadow duration-300 p-0 rounded-none border-none">
+  <div className="w-full relative">
     <Image
       src="/certifications/images/HBs_Ag_Cassette.jpg"
       alt="HBs Ag Cassette Certificate"
       width={0}
       height={0}
       sizes="100vw"
-      className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-300 rotate-[270deg]"
+      className="w-full h-auto object-contain rotate-[270deg] group-hover:scale-105 transition-transform duration-300"
     />
   </div>
 </Card>
