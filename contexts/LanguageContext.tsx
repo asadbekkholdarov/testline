@@ -157,7 +157,7 @@ const translations = {
     contact: 'Контакты',
 
     // Home Page
-    heroTitle: 'Testline - Лидер в области медицинской диагностики',
+    heroTitle: 'NAM BIOTEST OOO',
     heroDescription:
       'Мы предоставляем высококачественные медицинские тесты и диагностические решения. Служим в области здравоохранения с инновационными решениями.',
     whyTestline: 'Почему Testline?',
