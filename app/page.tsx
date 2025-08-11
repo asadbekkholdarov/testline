@@ -50,11 +50,28 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                {t('heroTitle')}
+                {language === 'uz' ? 'NAM BIOTEST - Sog\'lom va xavfsiz hayot uchun innovatsiyalar' :
+                 language === 'ru' ? 'NAM BIOTEST - Инновации ради здоровой и безопасной жизни' :
+                 'NAM BIOTEST - Innovations for a Healthy and Secure Life'}
               </h1>
-              <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                {t('heroDescription')}
-              </p>
+              <div className="text-lg md:text-xl text-gray-600 leading-relaxed space-y-4">
+                <p>
+                  {language === 'uz' ? 
+                    'NAM BIOTEST MCHJ — bu O\'zbekiston Respublikasi, Namangan shahrida joylashgan, in-vitro diagnostika (IVD) sohasiga ixtisoslashgan biotexnologiya kompaniyasi. 2018-yilda tashkil etilgan kompaniyamiz ilmiy-tadqiqot va sanoat ishlab chiqarish uchun bir nechta IVD texnologiya platformalarini ishlab chiqdi.' :
+                   language === 'ru' ?
+                    'ООО «NAM BIOTEST» — биотехнологическая компания, расположенная в городе Наманган, Республика Узбекистан, специализирующаяся на in-vitro диагностике (IVD). Основанная в 2018 году, компания разрабатывает несколько технологических платформ IVD для научных исследований и промышленного производства.' :
+                    'NAM BIOTEST LLC is a biotechnology company based in Namangan, Republic of Uzbekistan, specializing in in-vitro diagnostics (IVD). Since its establishment in 2018, our company develops multiple IVD technology platforms for both research and large-scale manufacturing.'
+                  }
+                </p>
+                <p>
+                  {language === 'uz' ? 
+                    'Biz 100 dan ortiq diagnostik parametrlarni ishlab chiqaramiz va "Avvalo sifat, avvalo ishonch" tamoyiliga amal qilamiz.' :
+                   language === 'ru' ?
+                    'Мы выпускаем более 100 диагностических параметров и придерживаемся принципа «Качество прежде всего, доверие прежде всего».' :
+                    'We produce over 100 diagnostic parameters and uphold our principle of "Quality First, Credibility First."'
+                  }
+                </p>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   asChild
