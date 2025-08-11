@@ -107,8 +107,8 @@ const translations = {
     yearsOfExperienceValue: '10+',
     countriesServed: "Xizmat ko'rsatilgan davlatlar",
     countriesServedValue: '5',
-    livesImproved: 'Yaxshilangan hayotlar',
-    livesImprovedValue: '50k+',
+    livesImproved: 'Ishlab chiqarish hajmi',
+    livesImprovedValue: '5 mln',
     readyToGetStarted: 'Boshlashga tayyormisiz?',
     ctaDescription:
       "Mahsulot va xizmatlarimiz haqida ko'proq ma'lumot olish uchun biz bilan bog'laning",
