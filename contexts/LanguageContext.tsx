@@ -101,7 +101,7 @@ const translations = {
     contactAddress: '"NAM BIOTEST" MCHJ, O\'zbekiston Respublikasi, Namangan shahar, Davlatobod tumani, Tadbirkor MFY, Yoshlar ko\'chasi, 89-uy.',
     contactWorkingHours: 'Dushanba - Juma: 8:00 - 17:00',
     sending: 'Yuborilmoqda...',
-    happyClients: 'Baxtli mijozlar',
+    happyClients: 'Mamnun mijozlar',
     happyClientsValue: '1000+',
     yearsOfExperience: 'Tajriba yillari',
     yearsOfExperienceValue: '10+',
