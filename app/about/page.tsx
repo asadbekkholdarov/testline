@@ -93,19 +93,25 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              {t('mission')} & {t('vision')}
+              {language === 'uz' ? 'Missiya va Maqsadlar' :
+               language === 'ru' ? 'Миссия и Видение' :
+               'Mission & Vision'}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <Card className="hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
                   <CardTitle className="text-2xl font-semibold text-gray-900 flex items-center justify-center">
                     <Heart className="w-8 h-8 text-blue-600 mr-3" />
-                    {t('mission')}
+                    {language === 'uz' ? 'Missiya' :
+                     language === 'ru' ? 'Миссия' :
+                     'Mission'}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    {t('missionText')}
+                    {language === 'uz' ? 'Har bir bemor uchun aniq, tezkor va ishonchli diagnostika xizmatlarini taqdim etish orqali sog\'liqni saqlash sifatini oshirish. Biz tibbiy diagnostika sohasida innovatsion texnologiyalar va ilg\'or yechimlar yaratib, sog\'liqni saqlash tizimini yanada samarali qilishga intilamiz.' :
+                     language === 'ru' ? 'Повышать качество здравоохранения, предоставляя точные, быстрые и надежные диагностические услуги для каждого пациента. Мы стремимся создавать инновационные технологии и передовые решения в области медицинской диагностики, делая систему здравоохранения более эффективной.' :
+                     'To enhance the quality of healthcare by providing accurate, rapid, and reliable diagnostic services for every patient. We strive to create innovative technologies and advanced solutions in medical diagnostics to make healthcare systems more efficient.'}
                   </p>
                 </CardContent>
               </Card>
@@ -114,12 +120,16 @@ export default function About() {
                 <CardHeader>
                   <CardTitle className="text-2xl font-semibold text-gray-900 flex items-center justify-center">
                     <Globe className="w-8 h-8 text-blue-600 mr-3" />
-                    {t('vision')}
+                    {language === 'uz' ? 'Maqsadlar' :
+                     language === 'ru' ? 'Видение' :
+                     'Vision'}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    {t('visionText')}
+                    {language === 'uz' ? 'Jahon miqyosida tibbiy diagnostika yechimlarining yetakchi ishlab chiqaruvchisi va yetkazib beruvchisi bo\'lish. Biz sog\'liqni saqlashni har bir inson uchun qulay, tezkor va samarali qilishga intilamiz. Zamonaviy texnologiyalar va innovatsiyalar orqali diagnostika xizmatlarini yanada ommalashtirishni maqsad qilamiz.' :
+                     language === 'ru' ? 'Стать мировым лидером в производстве и поставке медицинских диагностических решений. Наша цель — сделать здравоохранение доступным, быстрым и эффективным для каждого человека, расширяя возможности диагностики с помощью современных технологий и инноваций.' :
+                     'To become a global leader in manufacturing and delivering medical diagnostic solutions. Our goal is to make healthcare accessible, fast, and effective for everyone, expanding the reach of diagnostic services through modern technology and innovation.'}
                   </p>
                 </CardContent>
               </Card>
