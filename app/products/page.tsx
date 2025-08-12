@@ -15,19 +15,22 @@ export default function Products() {
 
   const categories = [
     { id: 'all', label: t('allProducts') },
-    { 
-      id: 'rapid-diagnostic', 
-      label: language === 'uz' ? 'Tezkor diagnostika testlari' : 
-             language === 'ru' ? 'Экспресс-диагностические тесты' : 
-             'Rapid Diagnostic Tests'
+    {
+      id: 'rapid-diagnostic',
+      label:
+        language === 'uz'
+          ? 'Tezkor diagnostika testlari'
+          : language === 'ru'
+          ? 'Экспресс-диагностические тесты'
+          : 'Rapid Diagnostic Tests',
     },
     { id: 'poct-fia', label: 'POCT FIA Platform' },
-    { 
-      id: 'blood-glucose', 
-      label: language === 'uz' ? 'Qon shakarini nazorat qilish' :
-             language === 'ru' ? 'Мониторинг глюкозы крови' :
-             'Blood Glucose Monitoring'
-    },
+    // {
+    //   id: 'blood-glucose',
+    //   label: language === 'uz' ? 'Qon shakarini nazorat qilish' :
+    //          language === 'ru' ? 'Мониторинг глюкозы крови' :
+    //          'Blood Glucose Monitoring'
+    // },
   ];
 
   // For now, show all products regardless of filter
@@ -62,7 +65,7 @@ export default function Products() {
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category) => (
+          {categories.map((category) =>
             category.id === 'all' ? (
               <Button
                 key={category.id}
@@ -83,14 +86,20 @@ export default function Products() {
                 asChild
                 className="border border-blue-600 text-blue-600 bg-white hover:bg-blue-600 hover:text-white transition-all duration-200"
               >
-                <Link href={`/products/${category.id === 'rapid-diagnostic' ? 'rapid-diagnostic-tests' : 
-                                        category.id === 'poct-fia' ? 'poct-fia-platform' : 
-                                        'blood-glucose-monitoring'}`}>
+                <Link
+                  href={`/products/${
+                    category.id === 'rapid-diagnostic'
+                      ? 'rapid-diagnostic-tests'
+                      : category.id === 'poct-fia'
+                      ? 'poct-fia-platform'
+                      : 'blood-glucose-monitoring'
+                  }`}
+                >
                   {category.label}
                 </Link>
               </Button>
             )
-          ))}
+          )}
         </div>
 
         {/* Category Cards */}
@@ -109,14 +118,18 @@ export default function Products() {
               </CardHeader>
               <CardContent className="p-6">
                 <CardTitle className="text-xl mb-3 group-hover:text-blue-600 transition-colors">
-                  {language === 'uz' ? 'Tezkor diagnostika testlari' : 
-                   language === 'ru' ? 'Экспресс-диагностические тесты' : 
-                   'Rapid Diagnostic Tests'}
+                  {language === 'uz'
+                    ? 'Tezkor diagnostika testlari'
+                    : language === 'ru'
+                    ? 'Экспресс-диагностические тесты'
+                    : 'Rapid Diagnostic Tests'}
                 </CardTitle>
                 <p className="text-gray-600 text-sm mb-4">
-                  {language === 'uz' ? 'Turli kasalliklarni tez va aniq aniqlash uchun zamonaviy testlar' :
-                   language === 'ru' ? 'Современные тесты для быстрого и точного выявления различных заболеваний' :
-                   'Modern tests for quick and accurate detection of various diseases'}
+                  {language === 'uz'
+                    ? 'Turli kasalliklarni tez va aniq aniqlash uchun zamonaviy testlar'
+                    : language === 'ru'
+                    ? 'Современные тесты для быстрого и точного выявления различных заболеваний'
+                    : 'Modern tests for quick and accurate detection of various diseases'}
                 </p>
                 <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
                   {t('viewDetails')}
@@ -142,9 +155,11 @@ export default function Products() {
                   POCT FIA Platform
                 </CardTitle>
                 <p className="text-gray-600 text-sm mb-4">
-                  {language === 'uz' ? 'Fluoressent immunoassay texnologiyasi asosidagi zamonaviy POCT platformasi' :
-                   language === 'ru' ? 'Современная POCT платформа на основе технологии флуоресцентного иммуноанализа' :
-                   'Advanced POCT platform based on Fluorescent Immunoassay technology'}
+                  {language === 'uz'
+                    ? 'Fluoressent immunoassay texnologiyasi asosidagi zamonaviy POCT platformasi'
+                    : language === 'ru'
+                    ? 'Современная POCT платформа на основе технологии флуоресцентного иммуноанализа'
+                    : 'Advanced POCT platform based on Fluorescent Immunoassay technology'}
                 </p>
                 <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
                   {t('viewDetails')}
@@ -153,6 +168,7 @@ export default function Products() {
             </Link>
           </Card>
 
+          {/* 
           <Card className="group hover:shadow-lg transition-shadow duration-300">
             <Link href="/products/blood-glucose-monitoring">
               <CardHeader className="p-0">
@@ -167,14 +183,18 @@ export default function Products() {
               </CardHeader>
               <CardContent className="p-6">
                 <CardTitle className="text-xl mb-3 group-hover:text-blue-600 transition-colors">
-                  {language === 'uz' ? 'Qon shakarini nazorat qilish' :
-                   language === 'ru' ? 'Мониторинг глюкозы крови' :
-                   'Blood Glucose Monitoring'}
+                  {language === 'uz'
+                    ? 'Qon shakarini nazorat qilish'
+                    : language === 'ru'
+                    ? 'Мониторинг глюкозы крови'
+                    : 'Blood Glucose Monitoring'}
                 </CardTitle>
                 <p className="text-gray-600 text-sm mb-4">
-                  {language === 'uz' ? 'Diabetik bemorlar uchun zamonaviy glyukometrlar va aksessuarlar' :
-                   language === 'ru' ? 'Современные глюкометры и аксессуары для диабетических пациентов' :
-                   'Advanced glucometers and accessories for diabetic patients'}
+                  {language === 'uz'
+                    ? 'Diabetik bemorlar uchun zamonaviy glyukometrlar va aksessuarlar'
+                    : language === 'ru'
+                    ? 'Современные глюкометры и аксессуары для диабетических пациентов'
+                    : 'Advanced glucometers and accessories for diabetic patients'}
                 </p>
                 <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
                   {t('viewDetails')}
@@ -182,8 +202,8 @@ export default function Products() {
               </CardContent>
             </Link>
           </Card>
+          */}
         </div>
-
       </div>
     </div>
   );

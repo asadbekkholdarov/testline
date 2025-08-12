@@ -124,20 +124,3 @@ export const newsItems: NewsItem[] = [
     ]
   }
 ];
-
-// Function to get all news items including custom ones from localStorage
-export const getAllNewsItems = (): NewsItem[] => {
-  if (typeof window === 'undefined') {
-    return newsItems;
-  }
-  
-  try {
-    const customNews = JSON.parse(localStorage.getItem('customNews') || '[]');
-    return [...customNews, ...newsItems].sort((a, b) => 
-      new Date(b.date).getTime() - new Date(a.date).getTime()
-    );
-  } catch (error) {
-    console.error('Error loading custom news:', error);
-    return newsItems;
-  }
-};

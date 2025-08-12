@@ -26,7 +26,7 @@ const translations = {
     // Home Page
     heroTitle: 'NAM BIOTEST MCHJ',
     heroDescription:
-      "NAM BIOTEST MCHJ — bu O‘zbekiston Respublikasi, Namangan shahrida joylashgan, in-vitro diagnostika (IVD) sohasiga ixtisoslashgan biotexnologiya kompaniyasi. 2018-yilda tashkil etilgan kompaniyamiz “Sog‘lom va xavfsiz hayot uchun innovatsiyalar” shiorini o‘z oldiga maqsad qilib qo‘ygan bo‘lib, ilmiy-tadqiqot va sanoat ishlab chiqarish uchun bir nechta IVD texnologiya platformalarini ishlab chiqdi.",
+      'NAM BIOTEST MCHJ — bu O‘zbekiston Respublikasi, Namangan shahrida joylashgan, in-vitro diagnostika (IVD) sohasiga ixtisoslashgan biotexnologiya kompaniyasi. 2018-yilda tashkil etilgan kompaniyamiz “Sog‘lom va xavfsiz hayot uchun innovatsiyalar” shiorini o‘z oldiga maqsad qilib qo‘ygan bo‘lib, ilmiy-tadqiqot va sanoat ishlab chiqarish uchun bir nechta IVD texnologiya platformalarini ishlab chiqdi.',
     whyTestline: 'Nega Testline?',
     whyTestlineDesc:
       'Bizning mahsulotlarimiz eng yuqori sifat standartlariga javob beradi va jahon bozorida tanilgan.',
@@ -98,7 +98,8 @@ const translations = {
     workingHours: 'Ish vaqti',
     contactEmail: 'nambiotest@gmail.com',
     contactPhone: '+998 91 352 74 74',
-    contactAddress: '"NAM BIOTEST" MCHJ, O\'zbekiston Respublikasi, Namangan shahar, Davlatobod tumani, Tadbirkor MFY, Yoshlar ko\'chasi, 89-uy.',
+    contactAddress:
+      '"NAM BIOTEST" MCHJ, O\'zbekiston Respublikasi, Namangan shahar, Davlatobod tumani, Tadbirkor MFY, Yoshlar ko\'chasi, 89-uy.',
     contactWorkingHours: 'Dushanba - Juma: 8:00 - 17:00',
     sending: 'Yuborilmoqda...',
     happyClients: 'Mamnun mijozlar',
@@ -109,7 +110,7 @@ const translations = {
     countriesServedValue: '5',
     livesImproved: 'Ishlab chiqarish hajmi',
     livesImprovedValue: '5 mln',
-    readyToGetStarted: 'Boshlashga tayyormisiz?',
+    readyToGetStarted: 'Hamkorlikka tayyormisiz?',
     ctaDescription:
       "Mahsulot va xizmatlarimiz haqida ko'proq ma'lumot olish uchun biz bilan bog'laning",
     productNotFound: 'Mahsulot topilmadi',
@@ -147,6 +148,9 @@ const translations = {
     timeline2025Title: 'Kelajak sari',
     timeline2025Desc:
       'Yangi bozorlarga chiqish va mahsulotlar assortimentini kengaytirish rejalashtirilmoqda.',
+    footerDescription:
+      "Biz yuqori sifatli diagnostika vositalarini taqdim etamiz. Sog'liqni saqlash sohasida innovatsion yechimlar bilan xizmat qilamiz.  Bizning maqsadimiz - har bir bemorga aniq va ishonchli diagnostika xizmatlarini taqdim etish.",
+    quickLinks: 'Tezkor havolalar',
   },
   ru: {
     // Navigation
@@ -231,7 +235,8 @@ const translations = {
     workingHours: 'Время работы',
     contactEmail: 'nambiotest@gmail.com',
     contactPhone: '+998 91 352 74 74',
-    contactAddress: 'ООО "NAM BIOTEST", Республика Узбекистан, город Наманган, Давлатободский район, Тадбиркор СГМ, ул. Ёшлар, дом 89.',
+    contactAddress:
+      'ООО "NAM BIOTEST", Республика Узбекистан, город Наманган, Давлатободский район, Тадбиркор СГМ, ул. Ёшлар, дом 89.',
     contactWorkingHours: 'Пн - Пт: 8:00 - 17:00',
     sending: 'Отправка...',
     happyClients: 'Довольные клиенты',
@@ -281,6 +286,9 @@ const translations = {
     timeline2025Title: 'В будущее',
     timeline2025Desc:
       'Планируется выход на новые рынки и расширение ассортимента продуктов.',
+    footerDescription:
+      'Мы предоставляем высококачественные диагностические инструменты. Служим инновационными решениями в области здравоохранения. Наша цель - предоставить каждому пациенту точные и надежные диагностические услуги.',
+    quickLinks: 'Быстрые ссылки',
   },
   en: {
     // Navigation
@@ -365,7 +373,8 @@ const translations = {
     workingHours: 'Working Hours',
     contactEmail: 'nambiotest@gmail.com',
     contactPhone: '+998 91 352 74 74',
-     contactAddress: '"NAM BIOTEST" LLC, 89 Yoshlar Street, Tadbirkor Neighborhood, Davlatabad District, Namangan City, Republic of Uzbekistan',
+    contactAddress:
+      '"NAM BIOTEST" LLC, 89 Yoshlar Street, Tadbirkor Neighborhood, Davlatabad District, Namangan City, Republic of Uzbekistan',
     contactWorkingHours: 'Mon - Fri: 8:00 AM - 5:00 PM',
     sending: 'Sending...',
     happyClients: 'Happy Clients',
@@ -415,6 +424,9 @@ const translations = {
     timeline2025Title: 'Looking Ahead',
     timeline2025Desc:
       'Plans to enter new markets and expand the product range.',
+    footerDescription:
+      'We provide high-quality diagnostic tools. Serving innovative solutions in healthcare. Our goal is to deliver accurate and reliable diagnostic services to every patient.',
+    quickLinks: 'Quick Links',
   },
 };
 
