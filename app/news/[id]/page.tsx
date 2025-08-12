@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, ArrowRight, CalendarDays, Clock, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, CalendarDays, Clock, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { getAllNewsItems, NewsItem } from '@/data/news';
 
@@ -28,7 +28,11 @@ export default function NewsDetail({ params }: NewsDetailPageProps) {
   if (!newsItem) {
     return (
       <div className="py-20 text-center">
-        <h1 className="text-2xl font-bold text-gray-900 mb-4">News article not found</h1>
+        <h1 className="text-2xl font-bold text-gray-900 mb-4">
+          {language === 'uz' ? 'Yangilik topilmadi' :
+           language === 'ru' ? 'Новость не найдена' :
+           'News article not found'}
+        </h1>
         <Button onClick={() => router.push('/news')}>
           <ArrowLeft className="mr-2 w-4 h-4" />
           {t('back')}
@@ -174,11 +178,15 @@ export default function NewsDetail({ params }: NewsDetailPageProps) {
           <div className="flex justify-between items-center">
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {language === 'uz' ? 'Boshqa yangiliklar' : language === 'ru' ? 'Другие новости' : 'Other News'}
+                {language === 'uz' ? 'Boshqa yangiliklar' : 
+                 language === 'ru' ? 'Другие новости' : 
+                 'Other News'}
               </h3>
               <Button asChild variant="outline">
                 <a href="/news">
-                  {language === 'uz' ? 'Barcha yangiliklar' : language === 'ru' ? 'Все новости' : 'All News'}
+                  {language === 'uz' ? 'Barcha yangiliklar' : 
+                   language === 'ru' ? 'Все новости' : 
+                   'All News'}
                 </a>
               </Button>
             </div>

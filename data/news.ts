@@ -124,3 +124,10 @@ export const newsItems: NewsItem[] = [
     ]
   }
 ];
+
+// Helper function to get all news items (including custom ones from localStorage if needed)
+export function getAllNewsItems(): NewsItem[] {
+  // In a real application, you might want to combine with items from localStorage
+  // For now, just return the static items
+  return newsItems;
+}
