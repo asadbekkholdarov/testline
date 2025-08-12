@@ -53,7 +53,7 @@ export default function About() {
             </div>
             <div className="relative">
               <Image
-                src="https://images.pexels.com/photos/3786126/pexels-photo-3786126.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/about_hero_img.jpg"
                 alt="Medical laboratory"
                 width={600}
                 height={400}

@@ -76,7 +76,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl opacity-20 blur-3xl"></div>
               <Image
-                src="https://images.pexels.com/photos/3786126/pexels-photo-3786126.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/main_hero_img.jpg"
                 alt="Medical diagnostic equipment"
                 width={600}
                 height={400}
