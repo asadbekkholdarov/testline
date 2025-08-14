@@ -60,67 +60,65 @@ export const newsItems: NewsItem[] = [
       "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800"
     ]
   },
-  {
-    id: "central-asia-expansion",
-    title: {
-      uz: "Markaziy Osiyo bozorlariga kengayish",
-      ru: "Расширение на рынки Центральной Азии",
-      en: "Expansion to Central Asia Markets"
-    },
-    excerpt: {
-      uz: "Testline o'z faoliyatini Markaziy Osiyo sog'liqni saqlash tizimlariga xizmat ko'rsatish uchun kengaytiryapti.",
-      ru: "Testline расширяет свою деятельность для обслуживания систем здравоохранения Центральной Азии.",
-      en: "Testline is expanding its operations to serve healthcare systems across Central Asia."
-    },
-    content: {
-      uz: "Testline kompaniyasi o'zining strategik rivojlanish rejasi doirasida Markaziy Osiyo mintaqasidagi sog'liqni saqlash bozorlariga faol kirishni e'lon qildi. Ushbu kengayish loyihasi doirasida kompaniya Qozog'iston, Qirg'iziston, Tojikiston va Turkmaniston bozorlariga o'z mahsulotlarini yetkazib berishni rejalashtirmoqda. Mintaqadagi sog'liqni saqlash tizimlarining ehtiyojlarini chuqur o'rganish natijasida, Testline o'z mahsulot liniyasini mahalliy talablarga moslashtirishga qaror qildi. Kompaniya mahalliy distribyutorlar bilan hamkorlik qilish va mintaqaviy xizmat markazlarini ochish orqali mijozlarga eng yaxshi xizmatni taqdim etishni maqsad qilgan.",
-      ru: "Компания Testline в рамках своего стратегического плана развития объявила об активном выходе на рынки здравоохранения Центральной Азии. В рамках этого проекта расширения компания планирует поставлять свою продукцию на рынки Казахстана, Кыргызстана, Таджикистана и Туркменистана. В результате глубокого изучения потребностей систем здравоохранения в регионе, Testline решила адаптировать свою продуктовую линейку к местным требованиям. Компания стремится предоставить клиентам лучший сервис через сотрудничество с местными дистрибьюторами и открытие региональных сервисных центров.",
-      en: "Testline, as part of its strategic development plan, announced its active entry into the healthcare markets of Central Asia. As part of this expansion project, the company plans to supply its products to the markets of Kazakhstan, Kyrgyzstan, Tajikistan and Turkmenistan. As a result of in-depth study of the needs of healthcare systems in the region, Testline decided to adapt its product line to local requirements. The company aims to provide customers with the best service through cooperation with local distributors and opening regional service centers."
-    },
-    date: "2024-01-10",
-    readTime: "5 min read",
-    category: {
-      uz: "Kompaniya yangiliklari",
-      ru: "Новости компании",
-      en: "Company News"
-    },
-    mainImage: "https://images.pexels.com/photos/3786126/pexels-photo-3786126.jpeg?auto=compress&cs=tinysrgb&w=800",
-    images: [
-      "https://images.pexels.com/photos/3786126/pexels-photo-3786126.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/7088526/pexels-photo-7088526.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/6823554/pexels-photo-6823554.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=800"
-    ]
+{
+  id: "namangan-illegal-inspections",
+  title: {
+    uz: "Namanganda tadbirkorlarga nisbatan 17 ta holatda noqonuniy tekshiruv o‘tkazilganligi aniqlandi",
+    ru: "В Намангане выявлено 17 случаев незаконных проверок в отношении предпринимателей",
+    en: "17 Cases of Illegal Inspections Against Entrepreneurs Identified in Namangan"
   },
+  excerpt: {
+    uz: "Namanganda o‘tkazilgan monitoring davomida 17 ta noqonuniy tekshiruv va 100 dan ortiq tartib buzilishi aniqlandi.",
+    ru: "В ходе мониторинга в Намангане выявлено 17 незаконных проверок и более 100 нарушений порядка.",
+    en: "Monitoring in Namangan revealed 17 illegal inspections and over 100 procedural violations."
+  },
+  content: {
+    uz: "Biznes-ombudsman devoniga 2024-yilning 11 oyi davomida namanganlik tadbirkorlardan 300 ga yaqin murojaat kelib tushgan. Bu haqda viloyatda o‘tkazilgan press-tur davomida maʼlum qilindi, deya xabar beradi “Daryo” muxbiri Azizbek Abduvaliyev. Ushbu murojaatlar yuzasidan tadbirkorlarning huquqlarini himoya qilish bo‘yicha 150 ta taʼsir chorasi qo‘llangan. Tekshiruvlar qonuniyligi yuzasidan o‘tkazilgan monitoring doirasida nazorat organlari tomonidan 17 ta noqonuniy tekshiruv o‘tkazilganligi hamda 100 dan ortiq holatda tekshirishlar tartibi buzilganligi aniqlangan.\n\nQon tahlillari asosida turli kasalliklarni aniqlaydigan ekspress testlar yaqingacha mamlakatga chetdan olib kelingan. Biznes-ombudsman ko‘magi bilan mazkur loyiha Namanganda yo‘lga qo‘yilib, hozirda ushbu tibbiyot mahsulotlari viloyatda ishlab chiqarilmoqda. “Nam biotest” korxonasi joriy yili ekspress testlar yetkazib berish bo‘yicha 20 milliard so‘mlik shartnoma imzoladi. Shuningdek, ularni qo‘shni davlatlar va Rossiyada ro‘yxatdan o‘tkazish bo‘yicha dastlabki qadamlar qo‘yildi. Zargarlik o‘quv yurti va mahalliy zargarlar kooperatsiyasini tashkil etish uchun viloyatdagi texnikumlardan birining bino-inshootlaridan foydalanish yuzasidan taklif kiritilishi natijasida mazkur ko‘chmas mulk Namanganda ushbu yo‘nalishdagi yirik korxonalardan biri — “Gavhar” kompaniyaga berildi. Zargarlik buyumlari va esdalik sovg‘alari ishlab chiqarayotgan korxonada shu nom ostidagi brend yaratilib, Italiya, Turkiya va Germaniyaning zamonaviy texnologiyalari qo‘llanmoqda.",
+    ru: "В течение 11 месяцев 2024 года в аппарат Бизнес-омбудсмена поступило около 300 обращений от предпринимателей Намангана. Об этом было сообщено во время пресс-тура в области, передает корреспондент «Дарё» Азизбек Абдувалиев. По этим обращениям было принято 150 мер по защите прав предпринимателей. В ходе мониторинга законности проверок установлено, что контролирующими органами проведено 17 незаконных проверок, а также в более чем 100 случаях были нарушены процедуры проверок.\n\nЭкспресс-тесты, определяющие различные заболевания на основе анализа крови, до недавнего времени завозились в страну из-за рубежа. При содействии Бизнес-омбудсмена этот проект был запущен в Намангане, и сейчас данная медицинская продукция производится в области. Компания «Nam biotest» в текущем году подписала контракт на поставку экспресс-тестов на сумму 20 миллиардов сумов. Кроме того, сделаны первые шаги по их регистрации в соседних странах и России. Для организации ювелирного учебного заведения и кооперации местных ювелиров было внесено предложение использовать здания и сооружения одного из техникумов области. В результате эта недвижимость была передана одной из крупных компаний региона в данной сфере — компании «Гавхар». На предприятии, производящем ювелирные изделия и сувениры, создан бренд под тем же названием, а также используются современные технологии Италии, Турции и Германии.",
+    en: "During the first 11 months of 2024, the Office of the Business Ombudsman received about 300 appeals from entrepreneurs in Namangan. This was announced during a press tour in the region, reports “Daryo” correspondent Azizbek Abduvaliyev. As a result of these appeals, 150 measures were taken to protect the rights of entrepreneurs. Monitoring of the legality of inspections revealed that regulatory bodies conducted 17 illegal inspections and violated inspection procedures in more than 100 cases.\n\nRapid tests that detect various diseases based on blood analysis were, until recently, imported into the country from abroad. With the support of the Business Ombudsman, this project was launched in Namangan, and these medical products are now produced in the region. The company “Nam biotest” signed a 20 billion soum contract this year for the supply of rapid tests. In addition, initial steps have been taken to register them in neighboring countries and Russia. To establish a jewelry school and a cooperation network of local jewelers, a proposal was made to use the facilities of one of the region’s technical colleges. As a result, this property was transferred to one of the region’s major companies in this field — “Gavhar” company. The enterprise, which produces jewelry and souvenirs, has created a brand under the same name and uses modern technologies from Italy, Turkey, and Germany."
+  },
+  date: "2024-01-15",
+  readTime: "6 min read",
+  category: {
+    uz: "Mahalliy yangiliklar",
+    ru: "Местные новости",
+    en: "Local News"
+  },
+  mainImage: "/news_blogs/first.jpg",
+  images: [
+    "/news_blogs/first.jpg",
+    "/news_blogs/second.jpg",
+    "/news_blogs/third.jpg"
+  ]
+}
+,
   {
-    id: "hospital-partnerships",
-    title: {
-      uz: "Mahalliy shifoxonalar bilan hamkorlik",
-      ru: "Партнерство с местными больницами",
-      en: "Partnership with Local Hospitals"
-    },
-    excerpt: {
-      uz: "Diagnostika imkoniyatlarini yaxshilash uchun yirik shifoxonalar bilan hamkorlik o'rnatdik.",
-      ru: "Мы установили партнерские отношения с крупными больницами для улучшения диагностических возможностей.",
-      en: "We've established partnerships with major hospitals to improve diagnostic accessibility."
-    },
-    content: {
-      uz: "Testline kompaniyasi respublikaning yetakchi tibbiy muassasalari bilan strategik hamkorlik shartnomalarini imzoladi. Ushbu hamkorlik doirasida kompaniya shifoxonalarga zamonaviy diagnostika uskunalarini yetkazib berish, texnik xizmat ko'rsatish va mutaxassislarni o'qitish xizmatlarini taqdim etadi. Hamkorlik loyihasi doirasida 15 ta yirik shifoxona va tibbiy markaz bilan shartnomalar imzolangan. Bu hamkorlik natijasida bemorlar yanada sifatli va tezkor diagnostika xizmatlaridan foydalanish imkoniyatiga ega bo'ladilar. Kompaniya shuningdek, tibbiy xodimlar uchun muntazam treninglar va seminarlar tashkil etishni rejalashtirmoqda.",
-      ru: "Компания Testline подписала договоры о стратегическом партнерстве с ведущими медицинскими учреждениями республики. В рамках этого партнерства компания предоставляет больницам современное диагностическое оборудование, техническое обслуживание и услуги по обучению специалистов. В рамках партнерского проекта подписаны договоры с 15 крупными больницами и медицинскими центрами. В результате этого партнерства пациенты получат доступ к более качественным и быстрым диагностическим услугам. Компания также планирует организовать регулярные тренинги и семинары для медицинского персонала.",
-      en: "Testline has signed strategic partnership agreements with leading medical institutions of the republic. Within the framework of this partnership, the company provides hospitals with modern diagnostic equipment, technical service and specialist training services. As part of the partnership project, agreements have been signed with 15 major hospitals and medical centers. As a result of this partnership, patients will have access to higher quality and faster diagnostic services. The company also plans to organize regular trainings and seminars for medical staff."
-    },
-    date: "2024-01-05",
-    readTime: "4 min read",
-    category: {
-      uz: "Hamkorlik",
-      ru: "Партнерство",
-      en: "Partnership"
-    },
-    mainImage: "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    id: "namangan-bio-test-2024-exhibition",
+  title: {
+    uz: "2024-yilda Namangan Bio Test korxonasi yirik ko‘rgazmada",
+    ru: "В 2024 году компания Namangan Bio Test на крупной выставке",
+    en: "Namangan Bio Test at a Major Exhibition in 2024"
+  },
+  excerpt: {
+    uz: "Namangan Bio Test korxonasi 2024-yilda o‘tkazilgan yirik sanoat va innovatsiya ko‘rgazmasida faol ishtirok etdi. Ko‘rgazma davomida korxona o‘zining zamonaviy laboratoriya uskunalari, sifat va xavfsizlik standartlariga mos ishlab chiqarish jarayonlari, hamda yangi texnologiyalarga asoslangan mahsulotlarini keng jamoatchilik e’tiboriga havola qildi. Tashrif buyurgan mutaxassislar va hamkorlar bilan tajriba almashish, yangi hamkorlik shartnomalarini tuzish, va bozor imkoniyatlarini yanada kengaytirish bo‘yicha muhim kelishuvlar amalga oshirildi. Ushbu ishtirok korxonaning nafaqat mintaqaviy, balki xalqaro miqyosda ham o‘z mavqeini mustahkamlashiga xizmat qildi.",
+    ru: "Компания Namangan Bio Test в 2024 году активно участвовала в крупной промышленной и инновационной выставке. На мероприятии компания представила современное лабораторное оборудование, производственные процессы, соответствующие стандартам качества и безопасности, а также продукцию, основанную на новых технологиях. Были проведены встречи с экспертами и партнёрами, заключены новые соглашения о сотрудничестве и расширении рыночных возможностей. Участие в выставке способствовало укреплению позиций компании не только на региональном, но и на международном уровне.",
+    en: "In 2024, Namangan Bio Test actively participated in a major industrial and innovation exhibition. During the event, the company showcased modern laboratory equipment, production processes meeting quality and safety standards, and products based on new technologies. Meetings with experts and partners led to new cooperation agreements and expanded market opportunities. This participation strengthened the company’s position not only regionally but also internationally."
+  },
+  content: {
+    uz: "Namangan Bio Test korxonasi 2024-yilda o‘tkazilgan yirik sanoat va innovatsiya ko‘rgazmasida faol ishtirok etdi. Ko‘rgazma davomida korxona o‘zining zamonaviy laboratoriya uskunalari, sifat va xavfsizlik standartlariga mos ishlab chiqarish jarayonlari, hamda yangi texnologiyalarga asoslangan mahsulotlarini keng jamoatchilik e’tiboriga havola qildi. Tashrif buyurgan mutaxassislar va hamkorlar bilan tajriba almashish, yangi hamkorlik shartnomalarini tuzish, va bozor imkoniyatlarini yanada kengaytirish bo‘yicha muhim kelishuvlar amalga oshirildi. Ushbu ishtirok korxonaning nafaqat mintaqaviy, balki xalqaro miqyosda ham o‘z mavqeini mustahkamlashiga xizmat qildi.",
+    ru: "Компания Namangan Bio Test в 2024 году приняла активное участие в крупной промышленной и инновационной выставке. В ходе мероприятия были представлены современные лабораторные установки, производственные процессы, соответствующие международным стандартам качества и безопасности, а также инновационные продукты компании. В рамках выставки состоялись встречи с потенциальными партнёрами и специалистами отрасли, были подписаны новые соглашения о сотрудничестве, направленные на расширение рыночных возможностей. Это участие укрепило позиции компании как на региональном, так и на международном уровне.",
+    en: "Namangan Bio Test took an active part in a major industrial and innovation exhibition in 2024. During the event, the company presented modern laboratory equipment, production processes in compliance with international quality and safety standards, and innovative products. The exhibition provided an opportunity to meet with industry experts and potential partners, resulting in new cooperation agreements aimed at expanding market opportunities. This participation has strengthened the company’s position both regionally and internationally."
+  },
+  date: "2024-01-05",
+  readTime: "4 min read",
+  category: {
+    uz: "Ko‘rgazmalar",
+    ru: "Выставки",
+    en: "Exhibitions"
+  },
+    mainImage: "/news_blogs/exibition_1.jpg",
     images: [
-      "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/7088526/pexels-photo-7088526.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/4167541/pexels-photo-4167541.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "/news_blogs/exibition_1.jpg","/news_blogs/exibition_2.jpg","/news_blogs/exibition_3.jpg","/news_blogs/exibition_4.jpg", "/news_blogs/exibition_5.jpg"
     ]
   }
 ];

@@ -5,11 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import {
-  CalendarDays,
-  Clock,
-  ArrowRight,
-} from 'lucide-react';
+import { CalendarDays, Clock, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { getAllNewsItems } from '@/data/news';
 
@@ -95,9 +91,11 @@ export default function News() {
         {allNewsItems.length === 0 && (
           <div className="text-center py-12">
             <div className="text-gray-500 text-lg">
-              {language === 'uz' ? 'Hozircha yangiliklar yo\'q' :
-               language === 'ru' ? 'Пока нет новостей' :
-               'No news available yet'}
+              {language === 'uz'
+                ? "Hozircha yangiliklar yo'q"
+                : language === 'ru'
+                ? 'Пока нет новостей'
+                : 'No news available yet'}
             </div>
           </div>
         )}
