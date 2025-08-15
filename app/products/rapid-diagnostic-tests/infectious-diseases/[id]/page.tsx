@@ -222,7 +222,7 @@ export default function TestDetail({ params }: TestDetailPageProps) {
                         {getSpecificationLabel(key)}
                       </td>
                       <td className="px-4 py-3 text-gray-700">
-                        {value}
+                        {typeof value === 'object' ? value[language] : value}
                       </td>
                     </tr>
                   ))}

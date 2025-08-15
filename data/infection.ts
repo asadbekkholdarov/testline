@@ -17,17 +17,61 @@ export interface InfectiousTest {
     en: string[];
   };
   specifications: {
-    principle: string;
-    format: string;
-    specimen: string;
-    readingTime: string;
-    packSizes: string;
-    storageTemperature: string;
-    shelfLife: string;
-    sensitivity: string;
-    specificity: string;
-    accuracy: string;
-    cutOff: string;
+    principle: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    format: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    specimen: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    readingTime: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    packSizes: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    storageTemperature: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    shelfLife: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    sensitivity: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    specificity: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    accuracy: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    cutOff: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
   };
   image: string;
 }
@@ -67,17 +111,61 @@ export const infectiousTests: InfectiousTest[] = [
       ]
     },
     specifications: {
-      principle: "Chromatographic Immunoassay",
-      format: "Cassette",
-      specimen: "Whole Blood / Serum / Plasma",
-      readingTime: "15 minutes",
-      packSizes: "25 T / Box (Cat. No.: TL-HBSAG-C25), 30 T / Box (Cat. No.: TL-HBSAG-C30)",
-      storageTemperature: "2–30 °C",
-      shelfLife: "2 years",
-      sensitivity: "—",
-      specificity: "—",
-      accuracy: "—",
-      cutOff: "—"
+      principle: {
+        uz: "Xromatografik immunoanaliz",
+        ru: "Хроматографический иммуноанализ",
+        en: "Chromatographic Immunoassay"
+      },
+      format: {
+        uz: "Kassetta",
+        ru: "Кассета",
+        en: "Cassette"
+      },
+      specimen: {
+        uz: "To'liq qon / Serum / Plazma",
+        ru: "Цельная кровь / Сыворотка / Плазма",
+        en: "Whole Blood / Serum / Plasma"
+      },
+      readingTime: {
+        uz: "15 daqiqa",
+        ru: "15 минут",
+        en: "15 minutes"
+      },
+      packSizes: {
+        uz: "25 T / Quti (Cat. No.: TL-HBSAG-C25), 30 T / Quti (Cat. No.: TL-HBSAG-C30)",
+        ru: "25 Т / Коробка (Cat. No.: TL-HBSAG-C25), 30 Т / Коробка (Cat. No.: TL-HBSAG-C30)",
+        en: "25 T / Box (Cat. No.: TL-HBSAG-C25), 30 T / Box (Cat. No.: TL-HBSAG-C30)"
+      },
+      storageTemperature: {
+        uz: "2–30 °C",
+        ru: "2–30 °C",
+        en: "2–30 °C"
+      },
+      shelfLife: {
+        uz: "2 yil",
+        ru: "2 года",
+        en: "2 years"
+      },
+      sensitivity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      specificity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      accuracy: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      cutOff: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      }
     },
     image: "/images/tests/HBsAg_casseta_1.jpg"
   },
@@ -115,17 +203,61 @@ export const infectiousTests: InfectiousTest[] = [
       ]
     },
     specifications: {
-      principle: "Chromatographic Immunoassay",
-      format: "Cassette",
-      specimen: "Whole Blood / Serum / Plasma",
-      readingTime: "15 minutes",
-      packSizes: "25 T / Box (Cat. No.: TL-HCV-C25), 30 T / Box (Cat. No.: TL-HCV-C30)",
-      storageTemperature: "2–30 °C",
-      shelfLife: "2 years",
-      sensitivity: "—",
-      specificity: "—",
-      accuracy: "—",
-      cutOff: "—"
+      principle: {
+        uz: "Xromatografik immunoanaliz",
+        ru: "Хроматографический иммуноанализ",
+        en: "Chromatographic Immunoassay"
+      },
+      format: {
+        uz: "Kassetta",
+        ru: "Кассета",
+        en: "Cassette"
+      },
+      specimen: {
+        uz: "To'liq qon / Serum / Plazma",
+        ru: "Цельная кровь / Сыворотка / Плазма",
+        en: "Whole Blood / Serum / Plasma"
+      },
+      readingTime: {
+        uz: "15 daqiqa",
+        ru: "15 минут",
+        en: "15 minutes"
+      },
+      packSizes: {
+        uz: "25 T / Quti (Cat. No.: TL-HCV-C25), 30 T / Quti (Cat. No.: TL-HCV-C30)",
+        ru: "25 Т / Коробка (Cat. No.: TL-HCV-C25), 30 Т / Коробка (Cat. No.: TL-HCV-C30)",
+        en: "25 T / Box (Cat. No.: TL-HCV-C25), 30 T / Box (Cat. No.: TL-HCV-C30)"
+      },
+      storageTemperature: {
+        uz: "2–30 °C",
+        ru: "2–30 °C",
+        en: "2–30 °C"
+      },
+      shelfLife: {
+        uz: "2 yil",
+        ru: "2 года",
+        en: "2 years"
+      },
+      sensitivity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      specificity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      accuracy: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      cutOff: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      }
     },
     image: "/images/tests/HCV_1.jpg"
   }
@@ -164,17 +296,61 @@ export const infectiousTests: InfectiousTest[] = [
       ]
     },
     specifications: {
-      principle: "Chromatographic Immunoassay",
-      format: "Strip",
-      specimen: "Whole Blood / Serum / Plasma",
-      readingTime: "15 minutes",
-      packSizes: "50 T / Box (Cat. No.: TL-HBSAG-S50), 80 T / Box (Cat. No.: TL-HBSAG-S80), 100 T / Box (Cat. No.: TL-HBSAG-S100)",
-      storageTemperature: "2–30 °C",
-      shelfLife: "2 years",
-      sensitivity: "—",
-      specificity: "—",
-      accuracy: "—",
-      cutOff: "—"
+      principle: {
+        uz: "Xromatografik immunoanaliz",
+        ru: "Хроматографический иммуноанализ",
+        en: "Chromatographic Immunoassay"
+      },
+      format: {
+        uz: "Chiziq",
+        ru: "Полоска",
+        en: "Strip"
+      },
+      specimen: {
+        uz: "To'liq qon / Serum / Plazma",
+        ru: "Цельная кровь / Сыворотка / Плазма",
+        en: "Whole Blood / Serum / Plasma"
+      },
+      readingTime: {
+        uz: "15 daqiqa",
+        ru: "15 минут",
+        en: "15 minutes"
+      },
+      packSizes: {
+        uz: "50 T / Quti (Cat. No.: TL-HBSAG-S50), 80 T / Quti (Cat. No.: TL-HBSAG-S80), 100 T / Quti (Cat. No.: TL-HBSAG-S100)",
+        ru: "50 Т / Коробка (Cat. No.: TL-HBSAG-S50), 80 Т / Коробка (Cat. No.: TL-HBSAG-S80), 100 Т / Коробка (Cat. No.: TL-HBSAG-S100)",
+        en: "50 T / Box (Cat. No.: TL-HBSAG-S50), 80 T / Box (Cat. No.: TL-HBSAG-S80), 100 T / Box (Cat. No.: TL-HBSAG-S100)"
+      },
+      storageTemperature: {
+        uz: "2–30 °C",
+        ru: "2–30 °C",
+        en: "2–30 °C"
+      },
+      shelfLife: {
+        uz: "2 yil",
+        ru: "2 года",
+        en: "2 years"
+      },
+      sensitivity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      specificity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      accuracy: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      cutOff: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      }
     },
     image: "/images/tests/HBsAg_strip_1.jpg"
   },
@@ -212,17 +388,61 @@ export const infectiousTests: InfectiousTest[] = [
       ]
     },
     specifications: {
-      principle: "Chromatographic Immunoassay",
-      format: "Strip",
-      specimen: "Whole Blood / Serum / Plasma",
-      readingTime: "15 minutes",
-      packSizes: "50 T / Box (Cat. No.: TL-HCV-S50), 80 T / Box (Cat. No.: TL-HCV-S80), 100 T / Box (Cat. No.: TL-HCV-S100)",
-      storageTemperature: "2–30 °C",
-      shelfLife: "2 years",
-      sensitivity: "—",
-      specificity: "—",
-      accuracy: "—",
-      cutOff: "—"
+      principle: {
+        uz: "Xromatografik immunoanaliz",
+        ru: "Хроматографический иммуноанализ",
+        en: "Chromatographic Immunoassay"
+      },
+      format: {
+        uz: "Chiziq",
+        ru: "Полоска",
+        en: "Strip"
+      },
+      specimen: {
+        uz: "To'liq qon / Serum / Plazma",
+        ru: "Цельная кровь / Сыворотка / Плазма",
+        en: "Whole Blood / Serum / Plasma"
+      },
+      readingTime: {
+        uz: "15 daqiqa",
+        ru: "15 минут",
+        en: "15 minutes"
+      },
+      packSizes: {
+        uz: "50 T / Quti (Cat. No.: TL-HCV-S50), 80 T / Quti (Cat. No.: TL-HCV-S80), 100 T / Quti (Cat. No.: TL-HCV-S100)",
+        ru: "50 Т / Коробка (Cat. No.: TL-HCV-S50), 80 Т / Коробка (Cat. No.: TL-HCV-S80), 100 Т / Коробка (Cat. No.: TL-HCV-S100)",
+        en: "50 T / Box (Cat. No.: TL-HCV-S50), 80 T / Box (Cat. No.: TL-HCV-S80), 100 T / Box (Cat. No.: TL-HCV-S100)"
+      },
+      storageTemperature: {
+        uz: "2–30 °C",
+        ru: "2–30 °C",
+        en: "2–30 °C"
+      },
+      shelfLife: {
+        uz: "2 yil",
+        ru: "2 года",
+        en: "2 years"
+      },
+      sensitivity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      specificity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      accuracy: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      cutOff: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      }
     },
     image: "/images/tests/HCV_STRIP_1.jpg"
   },
@@ -260,17 +480,61 @@ export const infectiousTests: InfectiousTest[] = [
       ]
     },
     specifications: {
-      principle: "Chromatographic Immunoassay",
-      format: "Cassette",
-      specimen: "Whole Blood / Serum / Plasma",
-      readingTime: "15 minutes",
-      packSizes: "25 T / Box (Cat. No.: TL-HIV12-C25), 30 T / Box (Cat. No.: TL-HIV12-C30)",
-      storageTemperature: "2–30 °C",
-      shelfLife: "2 years",
-      sensitivity: "—",
-      specificity: "—",
-      accuracy: "—",
-      cutOff: "—"
+      principle: {
+        uz: "Xromatografik immunoanaliz",
+        ru: "Хроматографический иммуноанализ",
+        en: "Chromatographic Immunoassay"
+      },
+      format: {
+        uz: "Kassetta",
+        ru: "Кассета",
+        en: "Cassette"
+      },
+      specimen: {
+        uz: "To'liq qon / Serum / Plazma",
+        ru: "Цельная кровь / Сыворотка / Плазма",
+        en: "Whole Blood / Serum / Plasma"
+      },
+      readingTime: {
+        uz: "15 daqiqa",
+        ru: "15 минут",
+        en: "15 minutes"
+      },
+      packSizes: {
+        uz: "25 T / Quti (Cat. No.: TL-HIV12-C25), 30 T / Quti (Cat. No.: TL-HIV12-C30)",
+        ru: "25 Т / Коробка (Cat. No.: TL-HIV12-C25), 30 Т / Коробка (Cat. No.: TL-HIV12-C30)",
+        en: "25 T / Box (Cat. No.: TL-HIV12-C25), 30 T / Box (Cat. No.: TL-HIV12-C30)"
+      },
+      storageTemperature: {
+        uz: "2–30 °C",
+        ru: "2–30 °C",
+        en: "2–30 °C"
+      },
+      shelfLife: {
+        uz: "2 yil",
+        ru: "2 года",
+        en: "2 years"
+      },
+      sensitivity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      specificity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      accuracy: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      cutOff: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      }
     },
     image: "/images/tests/HIV1.2_1.jpg"
   }
@@ -309,17 +573,61 @@ export const infectiousTests: InfectiousTest[] = [
       ]
     },
     specifications: {
-      principle: "Chromatographic Immunoassay",
-      format: "Strip",
-      specimen: "Whole Blood / Serum / Plasma",
-      readingTime: "15 minutes",
-      packSizes: "50 T / Box (Cat. No.: TL-HIV12-S50), 80 T / Box (Cat. No.: TL-HIV12-S80), 100 T / Box (Cat. No.: TL-HIV12-S100)",
-      storageTemperature: "2–30 °C",
-      shelfLife: "2 years",
-      sensitivity: "—",
-      specificity: "—",
-      accuracy: "—",
-      cutOff: "—"
+      principle: {
+        uz: "Xromatografik immunoanaliz",
+        ru: "Хроматографический иммуноанализ",
+        en: "Chromatographic Immunoassay"
+      },
+      format: {
+        uz: "Chiziq",
+        ru: "Полоска",
+        en: "Strip"
+      },
+      specimen: {
+        uz: "To'liq qon / Serum / Plazma",
+        ru: "Цельная кровь / Сыворотка / Плазма",
+        en: "Whole Blood / Serum / Plasma"
+      },
+      readingTime: {
+        uz: "15 daqiqa",
+        ru: "15 минут",
+        en: "15 minutes"
+      },
+      packSizes: {
+        uz: "50 T / Quti (Cat. No.: TL-HIV12-S50), 80 T / Quti (Cat. No.: TL-HIV12-S80), 100 T / Quti (Cat. No.: TL-HIV12-S100)",
+        ru: "50 Т / Коробка (Cat. No.: TL-HIV12-S50), 80 Т / Коробка (Cat. No.: TL-HIV12-S80), 100 Т / Коробка (Cat. No.: TL-HIV12-S100)",
+        en: "50 T / Box (Cat. No.: TL-HIV12-S50), 80 T / Box (Cat. No.: TL-HIV12-S80), 100 T / Box (Cat. No.: TL-HIV12-S100)"
+      },
+      storageTemperature: {
+        uz: "2–30 °C",
+        ru: "2–30 °C",
+        en: "2–30 °C"
+      },
+      shelfLife: {
+        uz: "2 yil",
+        ru: "2 года",
+        en: "2 years"
+      },
+      sensitivity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      specificity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      accuracy: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      cutOff: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      }
     },
     image: "/images/tests/HIV1.2_1.jpg"
   },
@@ -360,17 +668,61 @@ export const infectiousTests: InfectiousTest[] = [
       ]
     },
     specifications: {
-      principle: "Chromatographic Immunoassay",
-      format: "Cassette",
-      specimen: "Whole Blood / Serum / Plasma",
-      readingTime: "15–20 minutes",
-      packSizes: "25 T / Box (Cat. No.: TL-HIV4G-C25)",
-      storageTemperature: "2–30 °C",
-      shelfLife: "2 years",
-      sensitivity: "—",
-      specificity: "—",
-      accuracy: "—",
-      cutOff: "—"
+      principle: {
+        uz: "Xromatografik immunoanaliz",
+        ru: "Хроматографический иммуноанализ",
+        en: "Chromatographic Immunoassay"
+      },
+      format: {
+        uz: "Kassetta",
+        ru: "Кассета",
+        en: "Cassette"
+      },
+      specimen: {
+        uz: "To'liq qon / Serum / Plazma",
+        ru: "Цельная кровь / Сыворотка / Плазма",
+        en: "Whole Blood / Serum / Plasma"
+      },
+      readingTime: {
+        uz: "15–20 daqiqa",
+        ru: "15–20 минут",
+        en: "15–20 minutes"
+      },
+      packSizes: {
+        uz: "25 T / Quti (Cat. No.: TL-HIV4G-C25)",
+        ru: "25 Т / Коробка (Cat. No.: TL-HIV4G-C25)",
+        en: "25 T / Box (Cat. No.: TL-HIV4G-C25)"
+      },
+      storageTemperature: {
+        uz: "2–30 °C",
+        ru: "2–30 °C",
+        en: "2–30 °C"
+      },
+      shelfLife: {
+        uz: "2 yil",
+        ru: "2 года",
+        en: "2 years"
+      },
+      sensitivity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      specificity: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      accuracy: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      },
+      cutOff: {
+        uz: "—",
+        ru: "—",
+        en: "—"
+      }
     },
     image: "/images/tests/HIV1.2_1.jpg"
   },
