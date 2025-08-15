@@ -42,7 +42,7 @@ export default function TestDetail({ params }: TestDetailPageProps) {
   const getSpecificationLabel = (key: string) => {
     const labels = {
       principle: {
-        uz: 'Printsip',
+        uz: 'Prinsipi',
         ru: 'Принцип',
         en: 'Principle'
       },
