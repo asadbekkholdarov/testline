@@ -81,22 +81,22 @@ export const maternalChildTests: MaternalChildTest[] = [
     id: "hcg-pregnancy-dipstick",
     name: "TESTLINE hCG Pregnancy Rapid Test Dipstick",
     title: {
-      uz: "TESTLINE hCG Homiladorlik Tezkor Test Dipstik",
+      uz: "TESTLINE hCG Homiladorlik Tezkor Test Dipstiki",
       ru: "TESTLINE hCG Экспресс-тест на беременность Дипстик",
       en: "TESTLINE hCG Pregnancy Rapid Test Dipstick"
     },
     description: {
-      uz: "TESTLINE hCG Homiladorlik Tezkor Test Dipstik - bu siydikda inson xorion gonadotropinini (hCG) sifatli aniqlash uchun tezkor xromatografik immunoanaliz bo'lib, homiladorlikni erta aniqlashda yordam beradi. Test professional va uy sharoitida foydalanish uchun mo'ljallangan.",
+      uz: "TESTLINE hCG Homiladorlik Tezkor Test Dipstiki - bu siydikda inson xorion gonadotropinini (hCG) sifatli aniqlash uchun tezkor xromatografik immunoanaliz bo'lib, homiladorlikni erta aniqlashda yordam beradi. Test professional va uy sharoitida foydalanish uchun mo'ljallangan.",
       ru: "TESTLINE hCG Экспресс-тест на беременность Дипстик - это быстрый хроматографический иммуноанализ для качественного обнаружения хорионического гонадотропина человека (hCG) в моче для раннего выявления беременности. Тест предназначен для профессионального использования и использования в домашних условиях.",
       en: "The TESTLINE hCG Pregnancy Rapid Test Dipstick is a rapid chromatographic immunoassay for the qualitative detection of human chorionic gonadotropin (hCG) in urine to aid in the early detection of pregnancy. The test is intended for professional and over-the-counter use."
     },
     features: {
       uz: [
-        "3-5 daqiqada tez natijalar",
+        "3-5 daqiqada tezkor natijalar",
         "Oson foydalanish, botirib o'qish formati",
-        "Erta homiladorlikni aniqlash uchun yuqori sezgirlik",
+        "Erta homiladorlikni aniqlash uchun yuqori sezuvchanlik",
         "Aniq va ishonchli natijalar",
-        "Professional va uy foydalanishi uchun mos"
+        "Professional va uy sharoitida foydalanish uchun mos"
       ],
       ru: [
         "Быстрые результаты за 3-5 минут",
