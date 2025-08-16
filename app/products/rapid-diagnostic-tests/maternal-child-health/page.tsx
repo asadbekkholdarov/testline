@@ -1,18 +1,16 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ArrowLeft } from 'lucide-react';
+import { getAllMaternalChildTests } from '@/data/mother_child';
 
 export default function MaternalChildHealth() {
   const { t, language } = useLanguage();
-
- 
+  const maternalChildTests = getAllMaternalChildTests();
 
   return (
     <div className="py-20">
@@ -63,68 +61,40 @@ export default function MaternalChildHealth() {
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {maternalChildTests.map((test) => (
             <Card
-              key={product.id}
+              key={test.id}
               className="group hover:shadow-lg transition-shadow duration-300"
             >
-              <CardHeader className="p-0">
-                <div className="relative aspect-video overflow-hidden rounded-t-lg">
-                  <Image
-                    src={product.image}
-                    alt={product.name[language]}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="text-xl mb-3">
-                  {product.name[language]}
-                </CardTitle>
-                <p className="text-gray-600 text-sm mb-4">
-                  {product.description[language]}
-                </p>
-                
-                {/* Specifications */}
-                <div className="space-y-2 mb-4">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">
-                      {language === 'uz' ? 'Sezgirlik:' : 
-                       language === 'ru' ? 'Чувствительность:' : 
-                       'Sensitivity:'}
-                    </span>
-                    <span className="font-medium">{product.specifications.sensitivity}</span>
+              <Link href={`/products/rapid-diagnostic-tests/maternal-child-health/${test.id}`}>
+                <CardHeader className="p-0">
+                  <div className="relative aspect-video overflow-hidden rounded-t-lg">
+                    <Image
+                      src={test.image}
+                      alt={test.title[language]}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">
-                      {language === 'uz' ? 'Aniqlik:' : 
-                       language === 'ru' ? 'Специфичность:' : 
-                       'Specificity:'}
-                    </span>
-                    <span className="font-medium">{product.specifications.specificity}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">
-                      {language === 'uz' ? 'Vaqt:' : 
-                       language === 'ru' ? 'Время:' : 
-                       'Time:'}
-                    </span>
-                    <span className="font-medium">{product.specifications.time}</span>
-                  </div>
-                </div>
-
-                <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
-                  {t('viewDetails')}
-                </Button>
-              </CardContent>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <CardTitle className="text-xl mb-3 group-hover:text-blue-600 transition-colors">
+                    {test.title[language]}
+                  </CardTitle>
+                  
+                  <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
+                    {t('viewDetails')}
+                  </Button>
+                </CardContent>
+              </Link>
             </Card>
           ))}
         </div>
 
         {/* Coming Soon Section */}
-        <div className="mt-16 text-center">
+        {maternalChildTests.length < 10 && (
+          <div className="mt-16 text-center">
           <div className="bg-gray-50 rounded-lg p-8">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               {language === 'uz' ? 'Tez orada yangi mahsulotlar' :
@@ -137,7 +107,8 @@ export default function MaternalChildHealth() {
                'We are working on new maternal and child health tests'}
             </p>
           </div>
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );
