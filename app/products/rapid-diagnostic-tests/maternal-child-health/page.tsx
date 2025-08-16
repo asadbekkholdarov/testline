@@ -21,16 +21,23 @@ export default function MaternalChildHealth() {
             {t('products')}
           </Link>
           <span>/</span>
-          <Link href="/products/rapid-diagnostic-tests" className="hover:text-blue-600">
-            {language === 'uz' ? 'Tezkor diagnostika' : 
-             language === 'ru' ? 'Экспресс-диагностика' : 
-             'Rapid Diagnostic'}
+          <Link
+            href="/products/rapid-diagnostic-tests"
+            className="hover:text-blue-600"
+          >
+            {language === 'uz'
+              ? 'Tezkor diagnostika'
+              : language === 'ru'
+              ? 'Экспресс-диагностика'
+              : 'Rapid Diagnostic'}
           </Link>
           <span>/</span>
           <span className="text-gray-900">
-            {language === 'uz' ? 'Ona va bola salomatligi' :
-             language === 'ru' ? 'Здоровье матери и ребенка' :
-             'Maternal & Child Health'}
+            {language === 'uz'
+              ? 'Ona va bola salomatligi'
+              : language === 'ru'
+              ? 'Здоровье матери и ребенка'
+              : 'Maternal & Child Health'}
           </span>
         </div>
 
@@ -49,25 +56,31 @@ export default function MaternalChildHealth() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            {language === 'uz' ? 'Ona va bola salomatligi testlari' :
-             language === 'ru' ? 'Тесты здоровья матери и ребенка' :
-             'Maternal & Child Health Tests'}
+            {language === 'uz'
+              ? 'Ona va bola salomatligi testlari'
+              : language === 'ru'
+              ? 'Тесты здоровья матери и ребенка'
+              : 'Maternal & Child Health Tests'}
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {language === 'uz' ? 'Homiladorlik, ovulyatsiya va reproduktiv salomatlik uchun professional testlar' :
-             language === 'ru' ? 'Профессиональные тесты для беременности, овуляции и репродуктивного здоровья' :
-             'Professional tests for pregnancy, ovulation and reproductive health'}
+            {language === 'uz'
+              ? 'Homiladorlik, ovulyatsiya va reproduktiv salomatlik uchun professional testlar'
+              : language === 'ru'
+              ? 'Профессиональные тесты для беременности, овуляции и репродуктивного здоровья'
+              : 'Professional tests for pregnancy, ovulation and reproductive health'}
           </p>
         </div>
 
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        {/* Products Grid (now 3 columns on lg, 4 on xl) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           {maternalChildTests.map((test) => (
             <Card
               key={test.id}
               className="group hover:shadow-lg transition-shadow duration-300"
             >
-              <Link href={`/products/rapid-diagnostic-tests/maternal-child-health/${test.id}`}>
+              <Link
+                href={`/products/rapid-diagnostic-tests/maternal-child-health/${test.id}`}
+              >
                 <CardHeader className="p-0">
                   <div className="relative aspect-video overflow-hidden rounded-t-lg">
                     <Image
@@ -82,7 +95,6 @@ export default function MaternalChildHealth() {
                   <CardTitle className="text-xl mb-3 group-hover:text-blue-600 transition-colors">
                     {test.title[language]}
                   </CardTitle>
-                  
                   <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
                     {t('viewDetails')}
                   </Button>
@@ -95,18 +107,22 @@ export default function MaternalChildHealth() {
         {/* Coming Soon Section */}
         {maternalChildTests.length < 10 && (
           <div className="mt-16 text-center">
-          <div className="bg-gray-50 rounded-lg p-8">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              {language === 'uz' ? 'Tez orada yangi mahsulotlar' :
-               language === 'ru' ? 'Скоро новые продукты' :
-               'More Products Coming Soon'}
-            </h3>
-            <p className="text-gray-600">
-              {language === 'uz' ? 'Ona va bola salomatligi bo\'yicha yangi testlar ustida ishlamoqdamiz' :
-               language === 'ru' ? 'Мы работаем над новыми тестами по здоровью матери и ребенка' :
-               'We are working on new maternal and child health tests'}
-            </p>
-          </div>
+            <div className="bg-gray-50 rounded-lg p-8">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {language === 'uz'
+                  ? 'Tez orada yangi mahsulotlar'
+                  : language === 'ru'
+                  ? 'Скоро новые продукты'
+                  : 'More Products Coming Soon'}
+              </h3>
+              <p className="text-gray-600">
+                {language === 'uz'
+                  ? "Ona va bola salomatligi bo'yicha yangi testlar ustida ishlamoqdamiz"
+                  : language === 'ru'
+                  ? 'Мы работаем над новыми тестами по здоровью матери и ребенка'
+                  : 'We are working on new maternal and child health tests'}
+              </p>
+            </div>
           </div>
         )}
       </div>

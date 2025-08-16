@@ -77,6 +77,7 @@ export interface MaternalChildTest {
 }
 
 export const maternalChildTests: MaternalChildTest[] = [
+  // hCG Pregnancy Rapid Test Dipstick
   {
     id: "hcg-pregnancy-dipstick",
     name: "TESTLINE hCG Pregnancy Rapid Test Dipstick",
@@ -173,6 +174,7 @@ export const maternalChildTests: MaternalChildTest[] = [
     image: "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800"
   },
 
+  // LH Ovulation Rapid Test
   {
     id: "lh-ovulation-test",
     name: "TESTLINE LH Ovulation Rapid Test",
@@ -268,6 +270,7 @@ export const maternalChildTests: MaternalChildTest[] = [
     },
     image: "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800"
   },
+  // FSH Rapid Test Cassette
   {
     "id": "fsh-rapid-test-cassette",
     "name": "TESTLINE FSH Rapid Test Cassette",
@@ -361,7 +364,7 @@ export const maternalChildTests: MaternalChildTest[] = [
     "image": "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800"
   },
 
-  
+  // Toxo IgG/IgM Rapid Test Cassette
   {
     "id": "toxo-igg-igm-test-cassette",
     "name": "TESTLINE Toxo IgG/IgM Rapid Test Cassette",
@@ -457,6 +460,8 @@ export const maternalChildTests: MaternalChildTest[] = [
     },
     "image": "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800"
   },
+
+  // Chlamydia/Gonorrhea Rapid Test Cassette
   {
     "id": "chlamydia-gonorrhea-test-cassette",
     "name": "TESTLINE Chlamydia/Gonorrhea Rapid Test Cassette",
@@ -513,6 +518,200 @@ export const maternalChildTests: MaternalChildTest[] = [
         "uz": "15 daqiqa",
         "ru": "15 минут",
         "en": "15 minutes"
+      },
+      "packSizes": {
+        "uz": "25 T",
+        "ru": "25 T",
+        "en": "25 T"
+      },
+      "storageTemperature": {
+        "uz": "2–30 °C",
+        "ru": "2–30 °C",
+        "en": "2–30 °C"
+      },
+      "shelfLife": {
+        "uz": "2 yil",
+        "ru": "2 года",
+        "en": "2 years"
+      },
+      "sensitivity": {
+        "uz": "—",
+        "ru": "—",
+        "en": "—"
+      },
+      "specificity": {
+        "uz": "—",
+        "ru": "—",
+        "en": "—"
+      },
+      "accuracy": {
+        "uz": "—",
+        "ru": "—",
+        "en": "—"
+      },
+      "cutOff": {
+        "uz": "—",
+        "ru": "—",
+        "en": "—"
+      }
+    },
+    "image": "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+
+  // torch iGg igm combo test
+  
+  {
+    "id": "torch-igg-igm-combo-test-cassette",
+    "name": "TESTLINE ToRCH IgG/IgM Combo Rapid Test Cassette",
+    "title": {
+      "uz": "TESTLINE ToRCH IgG/IgM Kombinatsiyalangan Tezkor Test Kasseta",
+      "ru": "TESTLINE ToRCH Комбинированный Экспресс-тест Кассета",
+      "en": "TESTLINE ToRCH IgG/IgM Combo Rapid Test Cassette"
+    },
+    "description": {
+      "uz": "TESTLINE ToRCH IgG/IgM Kombinatsiyalangan Tezkor Test Kasseta - bu inson zardobi yoki plazmasida Toxoplasma gondii (TOXO), Rubella virusi (RUB), Sitomegalovirus (CMV) va Gerpes Simplex Virus turlari 1 va 2 (HSV-1/2) ga qarshi IgG va IgM antitanachalarini sifatli aniqlash va farqlash uchun tezkor xromatografik immunoanalizdir. U ToRCH infeksiyalarini diagnostikasida yordam berish uchun professional in vitro diagnostika maqsadida mo'ljallangan.",
+      "ru": "TESTLINE ToRCH Комбинированный Экспресс-тест Кассета - это быстрый хроматографический иммуноанализ для качественного обнаружения и дифференциации антител IgG и IgM к Toxoplasma gondii (TOXO), вирусу краснухи (RUB), цитомегаловирусу (CMV) и вирусам простого герпеса типов 1 и 2 (HSV-1/2) в сыворотке или плазме крови человека. Он предназначен для профессионального использования в качестве in vitro диагностики для помощи в диагностике ToRCH-инфекций.",
+      "en": "The TESTLINE ToRCH IgG/IgM Combo Rapid Test Cassette is a rapid chromatographic immunoassay for the qualitative detection and differentiation of IgG and IgM antibodies to Toxoplasma gondii (TOXO), Rubella virus (RUB), Cytomegalovirus (CMV), and Herpes Simplex Virus types 1 and 2 (HSV-1/2) in human serum or plasma. It is intended for professional in vitro diagnostic use to aid in the diagnosis of ToRCH infections."
+    },
+    "features": {
+      "uz": [
+        "TOXO, RUB, CMV, HSV-1 va HSV-2 ga qarshi IgG va IgM antitanachalarini aniqlaydi",
+        "O'tkir va o'tmishdagi infeksiyalar o'rtasidagi farqlash imkonini beradi",
+        "Oddiy protsedura va aniq talqin",
+        "15 daqiqada tez natijalar",
+        "Yuqori aniqlik"
+      ],
+      "ru": [
+        "Обнаруживает антитела IgG и IgM к TOXO, RUB, CMV, HSV-1 и HSV-2",
+        "Позволяет дифференцировать острую и прошлую инфекции",
+        "Простая процедура и четкая интерпретация",
+        "Быстрые результаты за 15 минут",
+        "Высокая точность"
+      ],
+      "en": [
+        "Detects IgG and IgM antibodies to TOXO, RUB, CMV, HSV-1, and HSV-2",
+        "Allows differentiation between acute and past infections",
+        "Simple procedure and clear interpretation",
+        "Fast results in 15 minutes",
+        "High accuracy"
+      ]
+    },
+    "specifications": {
+      "principle": {
+        "uz": "Xromatografik immunoanaliz",
+        "ru": "Хроматографический иммуноанализ",
+        "en": "Chromatographic Immunoassay"
+      },
+      "format": {
+        "uz": "Kasseta",
+        "ru": "Кассета",
+        "en": "Cassette"
+      },
+      "specimen": {
+        "uz": "Zardob/Plazma",
+        "ru": "Сыворотка/Плазма",
+        "en": "Serum/Plasma"
+      },
+      "readingTime": {
+        "uz": "15 daqiqa",
+        "ru": "15 минут",
+        "en": "15 minutes"
+      },
+      "packSizes": {
+        "uz": "—",
+        "ru": "—",
+        "en": "—"
+      },
+      "storageTemperature": {
+        "uz": "2–30 °C",
+        "ru": "2–30 °C",
+        "en": "2–30 °C"
+      },
+      "shelfLife": {
+        "uz": "2 yil",
+        "ru": "2 года",
+        "en": "2 years"
+      },
+      "sensitivity": {
+        "uz": "—",
+        "ru": "—",
+        "en": "—"
+      },
+      "specificity": {
+        "uz": "—",
+        "ru": "—",
+        "en": "—"
+      },
+      "accuracy": {
+        "uz": "—",
+        "ru": "—",
+        "en": "—"
+      },
+      "cutOff": {
+        "uz": "—",
+        "ru": "—",
+        "en": "—"
+      }
+    },
+    "image": "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  // Rubella IgG/IgM Rapid Test Cassette
+  {
+    "id": "rubella-igg-igm-test-cassette",
+    "name": "TESTLINE Rubella IgG/IgM Rapid Test Cassette",
+    "title": {
+      "uz": "TESTLINE Rubella IgG/IgM Tezkor Test Kasseta",
+      "ru": "TESTLINE Rubella IgG/IgM Экспресс-тест Кассета",
+      "en": "TESTLINE Rubella IgG/IgM Rapid Test Cassette"
+    },
+    "description": {
+      "uz": "TESTLINE Rubella IgG/IgM Tezkor Test Kasseta - bu butun qon, zardob yoki plazmadagi Rubella virusiga qarshi IgG va IgM antitanachalarini sifatli aniqlash va farqlash uchun tezkor xromatografik immunoanalizdir. U yaqinda yoki o'tmishdagi Rubella virusi infeksiyasini diagnostikasida yordam berish va immun holatni baholash uchun professional in vitro diagnostika maqsadida mo'ljallangan.",
+      "ru": "TESTLINE Rubella IgG/IgM Экспресс-тест Кассета - это быстрый хроматографический иммуноанализ для качественного обнаружения и дифференциации антител IgG и IgM к вирусу краснухи в цельной крови, сыворотке или плазме. Он предназначен для профессионального использования в качестве in vitro диагностики для помощи в диагностике недавней или прошлой инфекции вирусом краснухи и для оценки иммунного статуса.",
+      "en": "The TESTLINE Rubella IgG/IgM Rapid Test Cassette is a rapid chromatographic immunoassay for the qualitative detection and differentiation of IgG and IgM antibodies to the Rubella virus in whole blood, serum, or plasma. It is intended for professional in vitro diagnostic use to aid in the diagnosis of recent or past Rubella virus infection and to evaluate immune status."
+    },
+    "features": {
+      "uz": [
+        "IgG va IgM antitanachalarini aniqlaydi",
+        "Yaqinda o'tgan infeksiyadan o'tmishdagi infeksiyani farqlaydi",
+        "Oddiy foydalanish va 10–15 daqiqada tez natijalar",
+        "Yuqori sezgirlik va o'ziga xoslik",
+        "Butun qon, zardob yoki plazma namunalari uchun mos"
+      ],
+      "ru": [
+        "Обнаруживает антитела как IgG, так и IgM",
+        "Дифференцирует недавнюю инфекцию от прошлой",
+        "Простое управление и быстрые результаты за 10–15 минут",
+        "Высокая чувствительность и специфичность",
+        "Подходит для образцов цельной крови, сыворотки или плазмы"
+      ],
+      "en": [
+        "Detects both IgG and IgM antibodies",
+        "Differentiates recent from past infection",
+        "Simple operation and rapid results in 10–15 minutes",
+        "High sensitivity and specificity",
+        "Suitable for whole blood, serum, or plasma specimens"
+      ]
+    },
+    "specifications": {
+      "principle": {
+        "uz": "Xromatografik immunoanaliz",
+        "ru": "Хроматографический иммуноанализ",
+        "en": "Chromatographic Immunoassay"
+      },
+      "format": {
+        "uz": "Kasseta",
+        "ru": "Кассета",
+        "en": "Cassette"
+      },
+      "specimen": {
+        "uz": "WB/S/P",
+        "ru": "ЦК/С/П",
+        "en": "WB/S/P"
+      },
+      "readingTime": {
+        "uz": "10–15 daqiqa",
+        "ru": "10–15 минут",
+        "en": "10–15 minutes"
       },
       "packSizes": {
         "uz": "25 T",
@@ -553,196 +752,9 @@ export const maternalChildTests: MaternalChildTest[] = [
     "image": "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800"
   }
 
- ,{
-    "id": "toxo-igg-igm-test-cassette",
-    "name": "TESTLINE Toxo IgG/IgM Rapid Test Cassette",
-    "title": {
-      "uz": "TESTLINE Toxo IgG/IgM Tezkor Test Kasseta",
-      "ru": "TESTLINE Toxo IgG/IgM Экспресс-тест Кассета",
-      "en": "TESTLINE Toxo IgG/IgM Rapid Test Cassette"
-    },
-    "description": {
-      "uz": "TESTLINE Toxo IgG/IgM Tezkor Test Kasseta - bu butun qon, zardob yoki plazmadagi Toxoplasma gondii ga qarshi IgG va IgM antitanachalarini sifatli aniqlash va farqlash uchun tezkor xromatografik immunoanalizdir. Ushbu test o'tkir yoki o'tmishdagi toksoplazmozni diagnostikasida yordam berish va immun holatni baholash, ayniqsa homilador ayollar va immuniteti zaiflashgan bemorlarda professional in vitro diagnostika maqsadida mo'ljallangan.",
-      "ru": "TESTLINE Toxo IgG/IgM Экспресс-тест Кассета - это быстрый хроматографический иммуноанализ для качественного обнаружения и дифференциации антител IgG и IgM к Toxoplasma gondii в цельной крови, сыворотке или плазме. Этот тест предназначен для профессионального использования в качестве in vitro диагностики для помощи в диагностике острого или прошлого токсоплазмоза и для оценки иммунного статуса, особенно у беременных женщин и пациентов с ослабленным иммунитетом.",
-      "en": "The TESTLINE Toxo IgG/IgM Rapid Test Cassette is a rapid chromatographic immunoassay for the qualitative detection and differentiation of IgG and IgM antibodies to Toxoplasma gondii in whole blood, serum, or plasma. This test is intended for professional in vitro diagnostic use to aid in the diagnosis of acute or past toxoplasmosis and to assess immune status, particularly in pregnant women and immunocompromised patients."
-    },
-    "features": {
-      "uz": [
-        "IgG va IgM antitanachalarini aniqlaydi",
-        "Yaqinda o'tgan infeksiyadan o'tmishdagi infeksiyani farqlaydi",
-        "10–15 daqiqada oson foydalanish va natijalar",
-        "Yuqori sezgirlik va o'ziga xoslik",
-        "Butun qon, zardob yoki plazma namunalari uchun mos"
-      ],
-      "ru": [
-        "Обнаруживает антитела как IgG, так и IgM",
-        "Дифференцирует недавнюю инфекцию от прошлой",
-        "Простота использования с результатами за 10–15 минут",
-        "Высокая чувствительность и специфичность",
-        "Подходит для образцов цельной крови, сыворотки или плазмы"
-      ],
-      "en": [
-        "Detects both IgG and IgM antibodies",
-        "Differentiates recent from past infection",
-        "Easy to use with results in 10–15 minutes",
-        "High sensitivity and specificity",
-        "Suitable for whole blood, serum, or plasma specimens"
-      ]
-    },
-    "specifications": {
-      "principle": {
-        "uz": "Xromatografik immunoanaliz",
-        "ru": "Хроматографический иммуноанализ",
-        "en": "Chromatographic Immunoassay"
-      },
-      "format": {
-        "uz": "Kasseta",
-        "ru": "Кассета",
-        "en": "Cassette"
-      },
-      "specimen": {
-        "uz": "WB/S/P",
-        "ru": "ЦК/С/П",
-        "en": "WB/S/P"
-      },
-      "readingTime": {
-        "uz": "10–15 daqiqa",
-        "ru": "10–15 минут",
-        "en": "10–15 minutes"
-      },
-      "packSizes": {
-        "uz": "25 T",
-        "ru": "25 T",
-        "en": "25 T"
-      },
-      "storageTemperature": {
-        "uz": "2–30 °C",
-        "ru": "2–30 °C",
-        "en": "2–30 °C"
-      },
-      "shelfLife": {
-        "uz": "2 yil",
-        "ru": "2 года",
-        "en": "2 years"
-      },
-      "sensitivity": {
-        "uz": "—",
-        "ru": "—",
-        "en": "—"
-      },
-      "specificity": {
-        "uz": "—",
-        "ru": "—",
-        "en": "—"
-      },
-      "accuracy": {
-        "uz": "—",
-        "ru": "—",
-        "en": "—"
-      },
-      "cutOff": {
-        "uz": "—",
-        "ru": "—",
-        "en": "—"
-      }
-    },
-    "image": "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800"
-  },
-  {
-    "id": "chlamydia-gonorrhea-test-cassette",
-    "name": "TESTLINE Chlamydia/Gonorrhea Rapid Test Cassette",
-    "title": {
-      "uz": "TESTLINE Chlamydia/Gonorrhea Tezkor Test Kasseta",
-      "ru": "TESTLINE Chlamydia/Gonorrhea Экспресс-тест Кассета",
-      "en": "TESTLINE Chlamydia/Gonorrhea Rapid Test Cassette"
-    },
-    "description": {
-      "uz": "TESTLINE Chlamydia/Gonorrhea Tezkor Test Kasseta - bu ayol bachadon bo'yni surtmasi, erkak siydik chiqarish kanalidan surtma yoki siydik namunalarida Chlamydia trachomatis va Neisseria gonorrhoeae antigenlarini sifatli aniqlash uchun tezkor xromatografik immunoanalizdir. Ushbu test C. trachomatis va N. gonorrhoeae infeksiyalarini diagnostikasida yordam berish uchun professional in vitro diagnostika maqsadida mo'ljallangan.",
-      "ru": "TESTLINE Chlamydia/Gonorrhea Экспресс-тест Кассета - это быстрый хроматографический иммуноанализ для качественного обнаружения антигенов Chlamydia trachomatis и Neisseria gonorrhoeae в мазках из шейки матки у женщин, мазках из уретры у мужчин или образцах мочи. Этот тест предназначен для профессионального использования в качестве in vitro диагностики для помощи в диагностике инфекций C. trachomatis и N. gonorrhoeae.",
-      "en": "The TESTLINE Chlamydia/Gonorrhea Rapid Test Cassette is a rapid chromatographic immunoassay for the qualitative detection of Chlamydia trachomatis and Neisseria gonorrhoeae antigens in female cervical swab, male urethral swab, or urine specimens. This test is intended for professional in vitro diagnostic use to aid in the diagnosis of C. trachomatis and N. gonorrhoeae infections."
-    },
-    "features": {
-      "uz": [
-        "Bitta testda ham C. trachomatis, ham N. gonorrhoeae antigenlarini aniqlaydi",
-        "Surtma va siydik namunalari uchun mos",
-        "Natijalar 15 daqiqada chiqadi",
-        "Bajarish oson, maxsus jihozlar talab qilinmaydi",
-        "Yuqori sezgirlik va o'ziga xoslik"
-      ],
-      "ru": [
-        "Обнаруживает антигены C. trachomatis и N. gonorrhoeae в одном тесте",
-        "Подходит для мазков и образцов мочи",
-        "Результаты за 15 минут",
-        "Прост в использовании, не требует специального оборудования",
-        "Высокая чувствительность и специфичность"
-      ],
-      "en": [
-        "Detects both C. trachomatis and N. gonorrhoeae antigens in a single test",
-        "Suitable for swab and urine specimens",
-        "Results in 15 minutes",
-        "Simple to perform, no specialized equipment required",
-        "High sensitivity and specificity"
-      ]
-    },
-    "specifications": {
-      "principle": {
-        "uz": "Xromatografik immunoanaliz",
-        "ru": "Хроматографический иммуноанализ",
-        "en": "Chromatographic Immunoassay"
-      },
-      "format": {
-        "uz": "Kasseta",
-        "ru": "Кассета",
-        "en": "Cassette"
-      },
-      "specimen": {
-        "uz": "Surtma/Siydik",
-        "ru": "Мазок/Моча",
-        "en": "Swab/Urine"
-      },
-      "readingTime": {
-        "uz": "15 daqiqa",
-        "ru": "15 минут",
-        "en": "15 minutes"
-      },
-      "packSizes": {
-        "uz": "25 T",
-        "ru": "25 T",
-        "en": "25 T"
-      },
-      "storageTemperature": {
-        "uz": "2–30 °C",
-        "ru": "2–30 °C",
-        "en": "2–30 °C"
-      },
-      "shelfLife": {
-        "uz": "2 yil",
-        "ru": "2 года",
-        "en": "2 years"
-      },
-      "sensitivity": {
-        "uz": "—",
-        "ru": "—",
-        "en": "—"
-      },
-      "specificity": {
-        "uz": "—",
-        "ru": "—",
-        "en": "—"
-      },
-      "accuracy": {
-        "uz": "—",
-        "ru": "—",
-        "en": "—"
-      },
-      "cutOff": {
-        "uz": "—",
-        "ru": "—",
-        "en": "—"
-      }
-    },
-    "image": "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800"
-  }
+
+
+
 ];
 
 export const getMaternalChildTestById = (id: string): MaternalChildTest | undefined => {
