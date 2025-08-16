@@ -171,7 +171,99 @@ export const gastrointestinalTests: GastrointestinalTest[] = [
       }
     },
     image: "https://images.pexels.com/photos/4167541/pexels-photo-4167541.jpeg?auto=compress&cs=tinysrgb&w=800"
-  }
+  },
+  {
+  id: "h-pylori-ab-rapid-test-strip",
+  name: "TESTLINE H. pylori Ab Rapid Test Strip",
+  title: {
+    uz: "TESTLINE H. pylori Ab Tezkor Test Chizig'i",
+    ru: "TESTLINE H. pylori Ab Экспресс-тест Полоска",
+    en: "TESTLINE H. pylori Ab Rapid Test Strip"
+  },
+  description: {
+    uz: "TESTLINE H. pylori Ab Tezkor Test Chizig'i - bu to'liq qon, zardob yoki plazmada Helicobacter pylori ga qarshi antikorlarni sifatli aniqlash uchun tezkor xromatografik immunoanaliz. Ushbu test H. pylori infeksiyasini tashxislashda yordam berish uchun professional foydalanish uchun mo'ljallangan.",
+    ru: "TESTLINE H. pylori Ab Экспресс-тест Полоска - это быстрый хроматографический иммуноанализ для качественного обнаружения антител к Helicobacter pylori в цельной крови, сыворотке или плазме. Этот тест предназначен для профессионального использования в качестве вспомогательного средства в диагностике H. pylori инфекции.",
+    en: "The TESTLINE H. pylori Ab Rapid Test Strip is a rapid chromatographic immunoassay for the qualitative detection of antibodies to Helicobacter pylori in whole blood, serum, or plasma. This test is intended for professional use as an aid in the diagnosis of H. pylori infection."
+  },
+  features: {
+    uz: [
+      "Tez (15 daqiqa)",
+      "Helicobacter pylori ga qarshi antikorlarni aniqlaydi",
+      "Oddiy operatsiya (minimal o'qitish talab qilinadi)",
+      "Yuqori aniqlik"
+    ],
+    ru: [
+      "Быстро (15 минут)",
+      "Обнаруживает антитела к Helicobacter pylori",
+      "Простая операция (требуется минимальное обучение)",
+      "Высокая точность"
+    ],
+    en: [
+      "Fast (15 minutes)",
+      "Detects antibodies to Helicobacter pylori",
+      "Simple operation (minimal training required)",
+      "High accuracy"
+    ]
+  },
+  specifications: {
+    principle: {
+      uz: "Xromatografik immunoanaliz",
+      ru: "Хроматографический иммуноанализ",
+      en: "Chromatographic Immunoassay"
+    },
+    format: {
+      uz: "Chiziq",
+      ru: "Полоска",
+      en: "Strip"
+    },
+    specimen: {
+      uz: "To'liq qon / Zardob / Plazma",
+      ru: "Цельная кровь / Сыворотка / Плазма",
+      en: "Whole Blood / Serum / Plasma"
+    },
+    readingTime: {
+      uz: "15 daqiqa",
+      ru: "15 минут",
+      en: "15 minutes"
+    },
+    packSizes: {
+      uz: "50 T / Quti, 80 T / Quti, 100 T / Quti)",
+      ru: "50 Т / Коробка, 80 Т / Коробка (Cat. No.: TL-HPYLORI-S80), 100 Т / Коробка)",
+      en: "50 T / Box, 80 T / Box, 100 T / Box)"
+    },
+    storageTemperature: {
+      uz: "2–30 °C",
+      ru: "2–30 °C",
+      en: "2–30 °C"
+    },
+    shelfLife: {
+      uz: "2 yil",
+      ru: "2 года",
+      en: "2 years"
+    },
+    sensitivity: {
+      uz: "—",
+      ru: "—",
+      en: "—"
+    },
+    specificity: {
+      uz: "—",
+      ru: "—",
+      en: "—"
+    },
+    accuracy: {
+      uz: "—",
+      ru: "—",
+      en: "—"
+    },
+    cutOff: {
+      uz: "—",
+      ru: "—",
+      en: "—"
+    }
+  },
+  image: "/images/tests/HP_AB_1.jpg"
+}
 ];
 
 export const getGastrointestinalTestById = (id: string): GastrointestinalTest | undefined => {
