@@ -1,76 +1,16 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ArrowLeft } from 'lucide-react';
+import { getAllGastrointestinalTests } from '@/data/gastrointestinal';
 
 export default function GastrointestinalFecal() {
   const { t, language } = useLanguage();
-
-  const products = [
-    {
-      id: 'fob-test',
-      name: {
-        uz: 'FOB Test (Yashirin qon)',
-        ru: 'FOB Тест (Скрытая кровь)',
-        en: 'FOB Test (Fecal Occult Blood)'
-      },
-      description: {
-        uz: 'Najasda yashirin qonni aniqlash uchun test',
-        ru: 'Тест для обнаружения скрытой крови в кале',
-        en: 'Test for detecting hidden blood in stool'
-      },
-      image: 'https://images.pexels.com/photos/4167541/pexels-photo-4167541.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specifications: {
-        sensitivity: '96.8%',
-        specificity: '98.2%',
-        time: '5 min'
-      }
-    },
-    {
-      id: 'h-pylori-ag',
-      name: {
-        uz: 'H. Pylori Antigen',
-        ru: 'H. Pylori Антиген',
-        en: 'H. Pylori Antigen'
-      },
-      description: {
-        uz: 'Helikobakter pilori bakteriyasini aniqlash',
-        ru: 'Обнаружение бактерии Хеликобактер пилори',
-        en: 'Detection of Helicobacter pylori bacteria'
-      },
-      image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specifications: {
-        sensitivity: '94.5%',
-        specificity: '97.8%',
-        time: '10 min'
-      }
-    },
-    {
-      id: 'calprotectin',
-      name: {
-        uz: 'Kalprotektin',
-        ru: 'Кальпротектин',
-        en: 'Calprotectin'
-      },
-      description: {
-        uz: 'Ichak yallig\'lanishini aniqlash uchun test',
-        ru: 'Тест для выявления воспаления кишечника',
-        en: 'Test for detecting intestinal inflammation'
-      },
-      image: 'https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specifications: {
-        sensitivity: '93.2%',
-        specificity: '96.5%',
-        time: '15 min'
-      }
-    }
-  ];
+  const gastrointestinalTests = getAllGastrointestinalTests();
 
   return (
     <div className="py-20">
@@ -122,80 +62,53 @@ export default function GastrointestinalFecal() {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
+          {gastrointestinalTests.map((test) => (
             <Card
-              key={product.id}
+              key={test.id}
               className="group hover:shadow-lg transition-shadow duration-300"
             >
-              <CardHeader className="p-0">
-                <div className="relative aspect-video overflow-hidden rounded-t-lg">
-                  <Image
-                    src={product.image}
-                    alt={product.name[language]}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="text-xl mb-3">
-                  {product.name[language]}
-                </CardTitle>
-                <p className="text-gray-600 text-sm mb-4">
-                  {product.description[language]}
-                </p>
-                
-                {/* Specifications */}
-                <div className="space-y-2 mb-4">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">
-                      {language === 'uz' ? 'Sezgirlik:' : 
-                       language === 'ru' ? 'Чувствительность:' : 
-                       'Sensitivity:'}
-                    </span>
-                    <span className="font-medium">{product.specifications.sensitivity}</span>
+              <Link href={`/products/rapid-diagnostic-tests/gastrointestinal-fecal/${test.id}`}>
+                <CardHeader className="p-0">
+                  <div className="relative aspect-video overflow-hidden rounded-t-lg">
+                    <Image
+                      src={test.image}
+                      alt={test.title[language]}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">
-                      {language === 'uz' ? 'Aniqlik:' : 
-                       language === 'ru' ? 'Специфичность:' : 
-                       'Specificity:'}
-                    </span>
-                    <span className="font-medium">{product.specifications.specificity}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">
-                      {language === 'uz' ? 'Vaqt:' : 
-                       language === 'ru' ? 'Время:' : 
-                       'Time:'}
-                    </span>
-                    <span className="font-medium">{product.specifications.time}</span>
-                  </div>
-                </div>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <CardTitle className="text-xl mb-3 group-hover:text-blue-600 transition-colors">
+                    {test.title[language]}
+                  </CardTitle>
 
-                <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
-                  {t('viewDetails')}
-                </Button>
-              </CardContent>
+                  <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
+                    {t('viewDetails')}
+                  </Button>
+                </CardContent>
+              </Link>
             </Card>
           ))}
         </div>
 
         {/* Coming Soon Section */}
-        <div className="mt-16 text-center">
-          <div className="bg-gray-50 rounded-lg p-8">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              {language === 'uz' ? 'Tez orada yangi mahsulotlar' :
-               language === 'ru' ? 'Скоро новые продукты' :
-               'More Products Coming Soon'}
-            </h3>
-            <p className="text-gray-600">
-              {language === 'uz' ? 'Oshqozon-ichak testlari bo\'yicha yangi mahsulotlar ustida ishlamoqdamiz' :
-               language === 'ru' ? 'Мы работаем над новыми продуктами по желудочно-кишечным тестам' :
-               'We are working on new gastrointestinal test products'}
-            </p>
+        {gastrointestinalTests.length < 5 && (
+          <div className="mt-16 text-center">
+            <div className="bg-gray-50 rounded-lg p-8">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {language === 'uz' ? 'Tez orada yangi mahsulotlar' :
+                 language === 'ru' ? 'Скоро новые продукты' :
+                 'More Products Coming Soon'}
+              </h3>
+              <p className="text-gray-600">
+                {language === 'uz' ? 'Oshqozon-ichak testlari bo\'yicha yangi mahsulotlar ustida ishlamoqdamiz' :
+                 language === 'ru' ? 'Мы работаем над новыми продуктами по желудочно-кишечным тестам' :
+                 'We are working on new gastrointestinal test products'}
+              </p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
