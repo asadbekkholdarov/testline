@@ -12,65 +12,7 @@ import { ArrowLeft } from 'lucide-react';
 export default function MaternalChildHealth() {
   const { t, language } = useLanguage();
 
-  const products = [
-    {
-      id: 'pregnancy-test',
-      name: {
-        uz: 'Homiladorlik testi (hCG)',
-        ru: 'Тест на беременность (hCG)',
-        en: 'Pregnancy Test (hCG)'
-      },
-      description: {
-        uz: 'Homiladorlikni erta aniqlash uchun yuqori sezgirlikdagi test',
-        ru: 'Высокочувствительный тест для раннего выявления беременности',
-        en: 'High-sensitivity test for early pregnancy detection'
-      },
-      image: 'https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specifications: {
-        sensitivity: '25 mIU/ml',
-        specificity: '99.8%',
-        time: '3 min'
-      }
-    },
-    {
-      id: 'fsh-test',
-      name: {
-        uz: 'FSH Test',
-        ru: 'ФСГ Тест',
-        en: 'FSH Test'
-      },
-      description: {
-        uz: 'Follikul stimulyatsiya gormonini aniqlash testi',
-        ru: 'Тест для определения фолликулостимулирующего гормона',
-        en: 'Follicle Stimulating Hormone detection test'
-      },
-      image: 'https://images.pexels.com/photos/4226896/pexels-photo-4226896.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specifications: {
-        sensitivity: '25 mIU/ml',
-        specificity: '98.5%',
-        time: '10 min'
-      }
-    },
-    {
-      id: 'lh-test',
-      name: {
-        uz: 'LH Ovulyatsiya testi',
-        ru: 'ЛГ Тест на овуляцию',
-        en: 'LH Ovulation Test'
-      },
-      description: {
-        uz: 'Ovulyatsiya vaqtini aniqlash uchun luteinlashtiruvchi gormon testi',
-        ru: 'Тест лютеинизирующего гормона для определения времени овуляции',
-        en: 'Luteinizing hormone test for ovulation timing'
-      },
-      image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specifications: {
-        sensitivity: '25 mIU/ml',
-        specificity: '99.2%',
-        time: '5 min'
-      }
-    }
-  ];
+ 
 
   return (
     <div className="py-20">
