@@ -8,88 +8,12 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ArrowLeft } from 'lucide-react';
+import { getAllMetobalictestinalTests } from '@/data/metobalic';
 
 export default function CardiacMetabolic() {
   const { t, language } = useLanguage();
+  const metabolicTests = getAllMetobalictestinalTests();
 
-  const products = [
-    {
-      id: 'troponin-i',
-      name: {
-        uz: 'Troponin I (cTnI)',
-        ru: 'Тропонин I (cTnI)',
-        en: 'Troponin I (cTnI)'
-      },
-      description: {
-        uz: 'Yurak infarktini aniqlash uchun kardiak marker',
-        ru: 'Кардиальный маркер для диагностики инфаркта миокарда',
-        en: 'Cardiac marker for myocardial infarction diagnosis'
-      },
-      image: 'https://images.pexels.com/photos/6823554/pexels-photo-6823554.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specifications: {
-        sensitivity: '97.5%',
-        specificity: '98.8%',
-        time: '15 min'
-      }
-    },
-    {
-      id: 'ck-mb',
-      name: {
-        uz: 'CK-MB',
-        ru: 'КК-МВ',
-        en: 'CK-MB'
-      },
-      description: {
-        uz: 'Kreatin kinaza MB yurak enzimi testi',
-        ru: 'Тест сердечного фермента креатинкиназы МВ',
-        en: 'Creatine kinase MB cardiac enzyme test'
-      },
-      image: 'https://images.pexels.com/photos/4226896/pexels-photo-4226896.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specifications: {
-        sensitivity: '95.2%',
-        specificity: '97.1%',
-        time: '10 min'
-      }
-    },
-    {
-      id: 'myoglobin',
-      name: {
-        uz: 'Mioglobin',
-        ru: 'Миоглобин',
-        en: 'Myoglobin'
-      },
-      description: {
-        uz: 'Erta yurak shikastlanishini aniqlash markeri',
-        ru: 'Маркер раннего повреждения сердечной мышцы',
-        en: 'Early cardiac muscle damage marker'
-      },
-      image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specifications: {
-        sensitivity: '92.8%',
-        specificity: '94.5%',
-        time: '8 min'
-      }
-    },
-    {
-      id: 'hba1c',
-      name: {
-        uz: 'HbA1c',
-        ru: 'HbA1c',
-        en: 'HbA1c'
-      },
-      description: {
-        uz: 'Glikolizlangan gemoglobin - diabet nazorati',
-        ru: 'Гликированный гемоглобин - контроль диабета',
-        en: 'Glycated hemoglobin - diabetes control'
-      },
-      image: 'https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=800',
-      specifications: {
-        sensitivity: '96.3%',
-        specificity: '98.1%',
-        time: '5 min'
-      }
-    }
-  ];
 
   return (
     <div className="py-20">
@@ -141,67 +65,39 @@ export default function CardiacMetabolic() {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {products.map((product) => (
+          {metabolicTests.map((test) => (
             <Card
-              key={product.id}
+              key={test.id}
               className="group hover:shadow-lg transition-shadow duration-300"
             >
-              <CardHeader className="p-0">
-                <div className="relative aspect-video overflow-hidden rounded-t-lg">
-                  <Image
-                    src={product.image}
-                    alt={product.name[language]}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="text-xl mb-3">
-                  {product.name[language]}
-                </CardTitle>
-                <p className="text-gray-600 text-sm mb-4">
-                  {product.description[language]}
-                </p>
-                
-                {/* Specifications */}
-                <div className="space-y-2 mb-4">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">
-                      {language === 'uz' ? 'Sezgirlik:' : 
-                       language === 'ru' ? 'Чувствительность:' : 
-                       'Sensitivity:'}
-                    </span>
-                    <span className="font-medium">{product.specifications.sensitivity}</span>
+              <Link href={`/products/rapid-diagnostic-tests/cardiac-metabolic/${test.id}`}>
+                <CardHeader className="p-0">
+                  <div className="relative aspect-video overflow-hidden rounded-t-lg">
+                    <Image
+                      src={test.image}
+                      alt={test.title[language]}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">
-                      {language === 'uz' ? 'Aniqlik:' : 
-                       language === 'ru' ? 'Специфичность:' : 
-                       'Specificity:'}
-                    </span>
-                    <span className="font-medium">{product.specifications.specificity}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">
-                      {language === 'uz' ? 'Vaqt:' : 
-                       language === 'ru' ? 'Время:' : 
-                       'Time:'}
-                    </span>
-                    <span className="font-medium">{product.specifications.time}</span>
-                  </div>
-                </div>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <CardTitle className="text-xl mb-3 group-hover:text-blue-600 transition-colors">
+                    {test.title[language]}
+                  </CardTitle>
 
-                <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
-                  {t('viewDetails')}
-                </Button>
-              </CardContent>
+                  <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
+                    {t('viewDetails')}
+                  </Button>
+                </CardContent>
+              </Link>
             </Card>
           ))}
         </div>
 
         {/* Coming Soon Section */}
-        <div className="mt-16 text-center">
+        {metabolicTests.length < 5 && (
+          <div className="mt-16 text-center">
           <div className="bg-gray-50 rounded-lg p-8">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
               {language === 'uz' ? 'Tez orada yangi mahsulotlar' :
@@ -214,7 +110,8 @@ export default function CardiacMetabolic() {
                'We are working on new cardiac and metabolic test products'}
             </p>
           </div>
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );
