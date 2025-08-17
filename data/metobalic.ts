@@ -1,7 +1,84 @@
 
+export interface MetabalicTestInterface {
+  id: string;
+  name: string;
+  title: {
+    uz: string;
+    ru: string;
+    en: string;
+  };
+  description: {
+    uz: string;
+    ru: string;
+    en: string;
+  };
+  features: {
+    uz: string[];
+    ru: string[];
+    en: string[];
+  };
+  specifications: {
+    principle: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    format: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    specimen: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    readingTime: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    packSizes: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    storageTemperature: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    shelfLife: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    sensitivity: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    specificity: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    accuracy: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+    cutOff: {
+      uz: string;
+      ru: string;
+      en: string;
+    };
+  };
+  image: string;
+}
 
 
-const data = [
+export const metobalicTests: MetabalicTestInterface[] = [
   {
     "id": "troponin-i-rapid-test-cassette",
     "name": "TESTLINE Troponin I Rapid Test Cassette",
@@ -95,3 +172,11 @@ const data = [
     "image": "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800"
   }
 ]
+
+export const getMetobalictestinalTestById = (id: string): MetabalicTestInterface | undefined => {
+  return metobalicTests.find(test => test.id === id);
+};
+
+export const getAllMetobalictestinalTests = (): MetabalicTestInterface[] => {
+  return metobalicTests;
+};
