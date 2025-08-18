@@ -169,7 +169,7 @@ export const metobalicTests: MetabalicTestInterface[] = [
         "en": "—"
       }
     },
-    "image": "https://images.pexels.com/photos/7088395/pexels-photo-7088395.jpeg?auto=compress&cs=tinysrgb&w=800"
+    "image": "https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWNhbCUyMHRlc3R8ZW58MHx8MHx8fDA%3D"
   }
 ]
 
